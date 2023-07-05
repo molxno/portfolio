@@ -12,7 +12,8 @@ import {
   Subtitle,
   BtnWrap,
   ImgWrap,
-  Img
+  Img,
+  ImgLine
 } from "./InfoElements";
 
 const InfoSection = ({Route, lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) => {
@@ -36,6 +37,7 @@ const InfoSection = ({Route, lightBg, id, imgStart, topLine, lightText, headline
             <Column2>
               <ImgWrap>
                 <Img src={img} alt={alt} type="img/svg"/>
+                <ImgLine />
               </ImgWrap>
             </Column2>
           </InfoRow>

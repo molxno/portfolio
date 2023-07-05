@@ -14,7 +14,7 @@ export const Nav = styled.nav`
     z-index: 10;
 
     @media screen and (max-width: 960px) {
-        transition: 0.8s all ease;
+        transition: 0.8s all ease-in-out;
     }
 `;
 
@@ -29,7 +29,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-    color: #587cbc;
+    color: #df2935;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -52,7 +52,7 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #587cbc;
+        color: #df2935;
     }
 `;
 
@@ -69,54 +69,26 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-    height: 80px
+    height: 80px;
+    font-weight: bolder;
 `;
 
 export const NavLinks = styled(LinkS)`
-    color: #587cbc;
+    color: #df2935;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 
     &.active {
-        border-bottom: 5px solid #587cbc;
+        border-bottom: 5px solid #df2935;
         color: #fff;
     }
 
     &:hover {
-        transition: all 0.2s ease-in-out;
-        color: #fff;
-    }
-`
-
-export const NavBtn = styled.nav`
-    display: flex;
-    align-items: center;
-
-    @media screen and (max-width: 820px) {
-        display: none;
-    }
-`
-
-export const NavBtnLink = styled(LinkR)`
-    border-radius: 50px;
-    background: #fff;
-    white-space: nowrap;
-    padding: 10px 22px;
-    color: #000;
-    font-size: 16px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-
-    &:hover {
-        transition: all 0.2s ease-in-out;
-        background: #587cbc;
         color: #fff;
     }
 `

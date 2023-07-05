@@ -1,54 +1,17 @@
 export const homeObjOne = {
-    id: 'sobrenosotros',
-    lightBg: false,
-    lightText: true,
+    id: 'aboutme',
+    lightBg: true,
+    lightText: false,
     lightTextDesc: true,
-    topLine: 'Origen',
-    headline: 'Mercadeo y Publicidad',
-    description: 'Nos encargamos de hacer crecer el alcance y la visión de tu marca, proyectando ideas y conceptos de manera creativa para su posicionamiento.',
-    buttonLabel: 'Más información',
+    topLine: 'About Me',
+    headline: 'Fullstack Developer',
+    description: "Hey there! I'm Santiago Molano, a 20-year-old software enthusiast from Colombia. With a strong background in software development, I've dived into projects that have honed my skills. Passionate about the ever-evolving nature of technology, I'm always eager to learn something new. Whether it's mastering a new programming language, exploring cutting-edge frameworks, or staying up-to-date with the latest industry trends, I thrive on continuous growth and self-improvement.",
+    buttonLabel: 'See cv',
     imgStart: true,
-    img: require('../../images/img1.png'),
-    alt: 'Gestión de proyectos',
-    dark: true,
-    primary: false,
-    darkText: false,
-    Route: '/Nosotros'
-};
-
-
-export const homeObjTwo = {
-    id: 'colaboraciones',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'Emprendimientos',
-    headline: 'Para cualquier línea de negocio',
-    description: 'Sin importar cuál sea la principal línea de negocio de tu emprendimiento, Origen crea una identidad única y propia de reconocer.',
-    buttonLabel: 'Colaboraciones',
-    imgStart: false,
-    img: require('../../images/img3.png'),
-    alt: 'Impresión de marca',
+    img: require('../../images/AboutMe.png'),
+    alt: 'My photo',
     dark: false,
     primary: true,
     darkText: true,
-    Route: '/Colaboraciones'
-};
-
-export const homeObjThree = {
-    id: 'contacto',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'Comunicación',
-    headline: 'En cualquier lugar',
-    description: 'Nos caracterizamos por satisfacer siempre al cliente y por darle un servicio de calidad sin importar los obstáculos geográficos.',
-    buttonLabel: 'Comunícate',
-    imgStart: true,
-    img: require('../../images/img2.png'),
-    alt: 'car',
-    dark: false,
-    primary: true,
-    darkText: true,
-    Route: '/Contacto'
+    Route: '#'
 };

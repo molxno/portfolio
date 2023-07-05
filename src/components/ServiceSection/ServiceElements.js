@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  background: #282c54;
+  background: #df2935;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +42,7 @@ export const HeroTitle = styled.h1`
   font-size: 48px;
   text-align: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 810px) {
     font-size: 40px;
   }
 

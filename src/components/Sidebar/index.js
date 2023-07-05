@@ -6,8 +6,6 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  SidebarBtnWrap,
-  SidebarRoute,
 } from "./SidebarElements";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -18,22 +16,19 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="sobrenosotros" onClick={toggle}>
-            Sobre nosotros
+          <SidebarLink to="aboutme" onClick={toggle}>
+            Who is Molxno?
           </SidebarLink>
-          <SidebarLink to="colaboraciones" onClick={toggle}>
-            Colaboraciones
+          <SidebarLink to="experience" onClick={toggle}>
+            Experience
           </SidebarLink>
-          <SidebarLink to="servicios" onClick={toggle}>
-            Servicios
+          <SidebarLink to="projects" onClick={toggle}>
+            Projects
           </SidebarLink>
-          <SidebarLink to="contacto" onClick={toggle}>
-            Contacto
+          <SidebarLink to="skills" onClick={toggle}>
+            Skills
           </SidebarLink>
         </SidebarMenu>
-        <SidebarBtnWrap>
-          <SidebarRoute to="/cotizar">Cotizar</SidebarRoute>
-        </SidebarBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
   );

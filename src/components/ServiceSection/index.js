@@ -10,7 +10,7 @@ const ServiceSection = ({id}) => {
   return (
     <HeroContainer>
       <HeroContent>
-        <HeroTitle>Flujo de Servicios</HeroTitle>
+        <HeroTitle>Flujo de projects</HeroTitle>
       </HeroContent>
     </HeroContainer>
   );

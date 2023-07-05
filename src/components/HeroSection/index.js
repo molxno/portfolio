@@ -1,40 +1,31 @@
-import React, { useState } from "react";
-import Video from "../../videos/video.mp4";
-import { Button } from "../ButtonElements";
+import React from "react";
 import {
   HeroContainer,
-  HeroBg,
-  VideoBg,
   HeroContent,
-  HeroTitle,
-  HeroP,
-  HeroBtnWrapper,
-  ArrowForward,
-  ArrowRight,
+  HeaderText,
+  HeaderLogo,
+  HeaderTitle,
+  HeaderSubtitle,
+  Logo
 } from "./HeroElements";
+import logo from "../../images/logo.png"
 
 const HeroSection = ({id}) => {
-  const [hover, setHover] = useState(true);
-
-  const onHover = () => {
-    setHover(!hover);
-  };
 
   return (
     <HeroContainer>
-      <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
-      </HeroBg>
       <HeroContent>
-        <HeroTitle>Marketing Digital</HeroTitle>
-        <HeroP>
-          Haz crecer la cantidad de clientes potenciales y transforma tu marca en algo trascendental
-        </HeroP>
-        <HeroBtnWrapper>
-          <Button to="/Servicio" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' darkText='true'>
-            Cómo empezar {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
-        </HeroBtnWrapper>
+        <HeaderText>
+          <HeaderTitle>
+            molxno
+          </HeaderTitle>
+          <HeaderSubtitle>
+            Portfolio
+          </HeaderSubtitle>
+        </HeaderText>
+        <HeaderLogo>
+          <Logo src={logo} alt="Logo"/>
+        </HeaderLogo>
       </HeroContent>
     </HeroContainer>
   );

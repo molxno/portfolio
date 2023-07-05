@@ -6,9 +6,9 @@ export const ServicesContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #000;
+    background: #ffffff;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 810px) {
         height: 1400px;
     }
 
@@ -30,7 +30,7 @@ export const ServicesWrapper = styled.div`
         grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 810px) {
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
@@ -50,7 +50,6 @@ export const ServicesCard = styled.div`
 
     &:hover {
         transform: scale(1.02);
-        transition: all 0.2 ease-in-out;
         cursor: pointer;
     }
 `

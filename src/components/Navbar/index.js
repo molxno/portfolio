@@ -8,10 +8,7 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
-  NavBtnLink,
 } from "./NavBarElements";
-import logo from "../../images/espiral2.png";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll} from "react-scroll";
 
@@ -31,38 +28,34 @@ const Navbar = ({ toggle }) => {
   }, []);
 
   const toggleHome = () => {
-    scroll.scrollToTop()
+    scroll.scrollToTop({duration: 500})
   }
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#587cbc' }}>
+      <IconContext.Provider value={{ color: '#b71b25' }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              <img src={logo} alt="Logo" width="90px" height="90px" />
-              Origen
+              molxno.dev
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks to='sobrenosotros' smooth={true} duration={500} spy={true} exact='true' offset={0}>Sobre nosotros</NavLinks>
+                <NavLinks to='aboutme' smooth={true} duration={900} spy={true} exact='true' offset={0}>Who is Molxno?</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="colaboraciones" smooth={true} duration={500} spy={true} exact='true' offset={0}>Colaboraciones</NavLinks>
+                <NavLinks to="experience" smooth={true} duration={700} spy={true} exact='true' offset={0}>Experience</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="servicios" smooth={true} duration={500} spy={true} exact='true' offset={0}>Servicios</NavLinks>
+                <NavLinks to="projects" smooth={true} duration={600} spy={true} exact='true' offset={0}>Projects</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="contacto" smooth={true} duration={500} spy={true} exact='true' offset={0}>Contacto</NavLinks>
+                <NavLinks to="skills" smooth={true} duration={500} spy={true} exact='true' offset={0}>Skills</NavLinks>
               </NavItem>
             </NavMenu>
-            <NavBtn>
-              <NavBtnLink to="/Contacto">Cotizar</NavBtnLink>
-            </NavBtn>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

@@ -1,6 +1,6 @@
 {
-  "homepage": "https://molanosantiago.github.io/origen/",
-  "name": "origen",
+  "homepage": "https://molanosantiago.github.io/",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +13,7 @@
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.8",
+    "react-vertical-timeline-component": "^3.6.0",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
