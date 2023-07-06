@@ -7,6 +7,7 @@ import {
   homeObjOne,
 } from "../components/InfoSection/Data";
 import Footer from "../components/Footer";
+import TimelineSection from "../components/TimelineSection";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSection {...homeObjOne} />
+      <TimelineSection />
       <Footer />
     </>
   );

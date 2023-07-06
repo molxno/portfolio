@@ -69,7 +69,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-    height: 80px;
+    height: 50px;
     font-weight: bolder;
 `;
 
@@ -91,4 +91,20 @@ export const NavLinks = styled(LinkS)`
     &:hover {
         color: #fff;
     }
+    /* &:after {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        height: 3px;
+        width: 0;
+        max-width: 3%;
+        bottom: 1px;
+        transition: 0.3s;
+    }
+    &:hover {
+        color: #ffffff;
+    }
+    &:hover:after {
+        width: 100%;
+    } */
 `

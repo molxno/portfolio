@@ -61,7 +61,6 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
-  font-family: 'Unica One', cursive;
 `;
 
 export const Heading = styled.h1`
@@ -99,12 +98,5 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 -10px 0;
   padding-right: 0;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-`;
-
-export const ImgLine = styled.div`
-  background-color: #df2935;
-  height: 15px;
-  width: 100%;
+  border-radius: 20px;
 `;
