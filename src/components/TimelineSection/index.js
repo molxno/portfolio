@@ -46,10 +46,10 @@ function TimelineSection() {
         <TimelineWrapper>
           <Heading>Timeline</Heading>
           <VerticalTimeline lineColor="#df2935">
-            {TimelineData.map((element) => {
+            {TimelineData.map((element, index) => {
               return (
                 <VerticalTimelineElement
-                  key={element.key}
+                  key={index}
                   date={element.date}
                   dateClassName="date"
                   iconStyle={{ background: "#d9dcd9" }}

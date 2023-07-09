@@ -19,7 +19,7 @@ export const TimelineWrapper = styled.div`
 
 export const Heading = styled.h1`
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 5rem;
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600;
