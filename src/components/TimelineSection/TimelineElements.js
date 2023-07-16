@@ -1,7 +1,14 @@
 import styled from "styled-components";
 
 export const TimelineContainer = styled.div`
-
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: auto;
+  position: relative;
+  z-index: 1;
 `;
 
 export const TimelineWrapper = styled.div`
@@ -14,7 +21,6 @@ export const TimelineWrapper = styled.div`
   padding: 0 24px;
   justify-content: center;
   margin-bottom: 10rem;
-
 `;
 
 export const Heading = styled.h1`

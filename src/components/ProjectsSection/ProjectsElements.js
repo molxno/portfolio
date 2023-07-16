@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-  height: 900px;
+  background: #ffffff;
+  padding: 0 30px;
+  height: auto;
+  z-index: 1;
 `;
 
 export const ProjectsWrapper = styled.div`

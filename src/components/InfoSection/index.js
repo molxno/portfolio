@@ -15,6 +15,8 @@ import {
   Img,
 } from "./InfoElements";
 
+import CV from "../../data/SantiagoMolanoCV.pdf";
+
 const InfoSection = ({
   Route,
   lightBg,
@@ -31,6 +33,13 @@ const InfoSection = ({
   primary,
   dark,
 }) => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = CV;
+    link.download = "SantiagoMolanoCV.pdf";
+    link.click();
+  };
+
   return (
     <>
       <InfoContainer lightBg={lightBg} id={id}>
@@ -51,6 +60,7 @@ const InfoSection = ({
                     offset={-80}
                     primary={primary ? 0 : 1}
                     dark={dark ? 0 : 1}
+                    onClick={handleDownload}
                   >
                     {buttonLabel}
                   </Button>
