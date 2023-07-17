@@ -77,14 +77,12 @@ export const SkillIcons = styled.div`
 export const SkillIcon = styled.img`
   width: ${({ standarWidth }) => (standarWidth ? "280px" : "160px")};
   background-color: ${({ lightBg }) => (lightBg ? "#fff" : "#010606")};
-  border: 1px solid #ffffff;
   border-radius: 22px;
   padding: 20px 20px 20px 20px;
   transition: all 0.2s ease; 
 
   &:hover {
     transform: scale(1.05);
-    border-color: #df2935; /* Cambiar el color del borde a rojo en el estado hover */
   }
 `;
 
