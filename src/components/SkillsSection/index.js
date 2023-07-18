@@ -20,7 +20,8 @@ const SkillsSection = () => {
         <SkillCardLong>
           <SkillTitle>Backend</SkillTitle>
           <SkillSubtitle>
-            <strong>PHP</strong> is my strength but I have also worked with <strong>Python</strong>.
+            <strong>PHP</strong> is my strength but I have also worked with{" "}
+            <strong>Python</strong>.
           </SkillSubtitle>
           <SkillIcons>
             <SkillIcon
@@ -35,19 +36,20 @@ const SkillsSection = () => {
         </SkillCardLong>
         <SkillCard>
           <SkillTitle>Frontend</SkillTitle>
-          <SkillSubtitle>High experience with <strong>Javascript</strong>.</SkillSubtitle>
+          <SkillSubtitle>
+            High experience with <strong>Javascript</strong>.
+          </SkillSubtitle>
           <SkillIcons>
             <SkillIcon src="https://techinfini.in/wp-content/uploads/2017/09/React-Logo-1.png" />
-            <SkillIcon
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Css-versicherung-logo.svg/1280px-Css-versicherung-logo.svg.png"
-              standarWidth
-            />
+            <SkillIcon src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Css-versicherung-logo.svg/1280px-Css-versicherung-logo.svg.png" />
           </SkillIcons>
         </SkillCard>
         <SkillCard>
           <SkillTitle>Database</SkillTitle>
           <SkillSubtitle>
-            I have handled <strong>SQLServer</strong> and <strong>PostgreSQL</strong> but <strong>MySQL</strong> is the one with which I have more experience.
+            I have handled <strong>SQLServer</strong> and{" "}
+            <strong>PostgreSQL</strong> but <strong>MySQL</strong> is the one
+            with which I have more experience.
           </SkillSubtitle>
           <SkillIcons>
             <SkillIcon src={sqlServerIcon} />

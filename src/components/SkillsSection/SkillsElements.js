@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
-  height: 1000px;
+  height: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +11,7 @@ export const SkillsContainer = styled.div`
     height: 1400px;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 570px) {
     height: 1600px;
   }
 `;
@@ -36,8 +36,14 @@ export const SkillsWrapper = styled.div`
   grid-template-rows: 150px 150px; /* Establecer una altura fija para ambas filas */
   grid-gap: 18px;
   width: 70%;
-  height: 70%;
+  height: auto;
   justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1120px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px;
+  }
 `;
 
 export const SkillCardLong = styled.div`
@@ -52,6 +58,19 @@ export const SkillCardLong = styled.div`
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
+
+  @media screen and (max-width: 1120px) {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+
+  @media screen and (max-width: 570px) {
+    width: 27rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 22rem;
+  }
 `;
 
 export const SkillCard = styled.div`
@@ -63,7 +82,15 @@ export const SkillCard = styled.div`
   text-align: center;
   border-radius: 30px;
   text-align: center;
-  height: auto;
+  height: -webkit-fill-available;
+
+  @media screen and (max-width: 570px) {
+    width: 27rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 22rem;
+  }
 `;
 
 export const SkillIcons = styled.div`
@@ -72,14 +99,17 @@ export const SkillIcons = styled.div`
   justify-content: space-evenly;
   align-items: center;
   padding-top: 3rem;
+
+  @media screen and (max-width: 570px) {
+    transform: scale(0.6);
+  }
 `;
 
 export const SkillIcon = styled.img`
   width: ${({ standarWidth }) => (standarWidth ? "280px" : "160px")};
-  background-color: ${({ lightBg }) => (lightBg ? "#fff" : "#010606")};
   border-radius: 22px;
   padding: 20px 20px 20px 20px;
-  transition: all 0.2s ease; 
+  transition: all 0.2s ease;
 
   &:hover {
     transform: scale(1.05);
