@@ -47,9 +47,7 @@ export const SkillsWrapper = styled.div`
 `;
 
 export const SkillCardLong = styled.div`
-  /* border-color: #df2935; */
   border: 1px solid transparent;
-  /* backdrop-filter: blur(15px); */
   background-color: #010606;
   box-shadow: 0 2px 7px gray;
   text-align: center;
@@ -58,6 +56,7 @@ export const SkillCardLong = styled.div`
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
+  height: -webkit-fill-available;
 
   @media screen and (max-width: 1120px) {
     grid-column-start: auto;
@@ -66,6 +65,7 @@ export const SkillCardLong = styled.div`
 
   @media screen and (max-width: 570px) {
     width: 27rem;
+    height: auto;
   }
 
   @media screen and (max-width: 480px) {
@@ -74,9 +74,7 @@ export const SkillCardLong = styled.div`
 `;
 
 export const SkillCard = styled.div`
-  /* border-color: #df2935; */
   border: 1px solid transparent;
-  /* backdrop-filter: blur(15px); */
   background-color: #010606;
   box-shadow: 0 2px 7px gray;
   text-align: center;
@@ -98,7 +96,7 @@ export const SkillIcons = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 3rem;
+  height: 68%;
 
   @media screen and (max-width: 570px) {
     transform: scale(0.6);
