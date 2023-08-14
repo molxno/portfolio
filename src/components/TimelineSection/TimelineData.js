@@ -24,7 +24,7 @@ const TimelineData = [
     title: "Alternova Inc",
     position: "Backend Developer",
     description:
-      "In charge of maintaining and developing new requirements for the web portal and mobile application through agile methodologies such as Scrum and GitFlow. Technologies such as PHP(Laravel) and Javascript(React-React Native), Expo and Heroku were used.",
+      "Responsible of developing the backend for different projects using Python and PHP through agile methodologies such as Scrum. Handling design patterns, solid principles, cloud services and concurrency.",
     date: "May 2023 - Currently",
     icon: "alternova",
     link: "https://www.linkedin.com/company/alternova-inc/mycompany/",

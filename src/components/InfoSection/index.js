@@ -15,7 +15,7 @@ import {
   Img,
 } from "./InfoElements";
 
-import CV from "../../data/SantiagoMolanoCV.pdf";
+import CV from "../../data/SantiagoMolanoCV-english.pdf";
 
 const InfoSection = ({
   Route,

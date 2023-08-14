@@ -45,7 +45,7 @@ export const Column1 = styled.div`
 `;
 
 export const Column2 = styled.div`
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   padding: 0 15px;
   grid-area: col2;
 `;
