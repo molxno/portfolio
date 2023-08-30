@@ -45,14 +45,6 @@ const projects = [
     link: "https://criptoomonedas-react.netlify.app/",
   },
   {
-    name: "To Do Website",
-    background:
-      "https://i.ibb.co/xmk7MyC/Screenshot-from-2023-07-09-17-34-11.png",
-    hover:
-      "https://www.freepnglogos.com/uploads/php-logo-png/php-logo-parental-advisory-explicit-content-logo-png-transparent-3.png",
-    link: "http://chrono.rf.gd/",
-  },
-  {
     name: "Controls costs",
     background:
       "https://i.ibb.co/ts5xdh8/Screenshot-from-2023-07-09-17-35-44.png",
