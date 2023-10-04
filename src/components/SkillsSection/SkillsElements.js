@@ -112,6 +112,10 @@ export const SkillIcon = styled.img`
   &:hover {
     transform: scale(1.05);
   }
+
+  @media screen and (max-width: 750px) {
+    width: ${({ standarWidth }) => (standarWidth ? "250px" : "130px")};
+  }
 `;
 
 export const SkillTitle = styled.h2`

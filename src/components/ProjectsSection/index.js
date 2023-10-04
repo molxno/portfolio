@@ -45,6 +45,14 @@ const projects = [
     link: "https://criptoomonedas-react.netlify.app/",
   },
   {
+    name: "Landing Page",
+    background:
+      "https://i.ibb.co/yXvqG8p/Screenshot-from-2023-10-03-19-29-27.png",
+    hover:
+      "https://seeklogo.com/images/A/astro-icon-logo-44253BACEE-seeklogo.com.png",
+    link: "https://boo-web.vercel.app/",
+  },
+  {
     name: "Controls costs",
     background:
       "https://i.ibb.co/ts5xdh8/Screenshot-from-2023-07-09-17-35-44.png",

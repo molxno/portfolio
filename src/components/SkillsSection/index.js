@@ -21,16 +21,18 @@ const SkillsSection = () => {
           <SkillTitle>Backend</SkillTitle>
           <SkillSubtitle>
             <strong>PHP</strong> is my strength but I have also worked with{" "}
-            <strong>Python</strong>.
+            <strong>Python and Java</strong>.
           </SkillSubtitle>
           <SkillIcons>
             <SkillIcon
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Logo.min.svg/1280px-Logo.min.svg.png"
-              standarWidth
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
             />
             <SkillIcon
               src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png"
               standarWidth
+            />
+            <SkillIcon
+              src="https://cdn-icons-png.flaticon.com/512/226/226777.png"
             />
           </SkillIcons>
         </SkillCardLong>
@@ -41,7 +43,8 @@ const SkillsSection = () => {
           </SkillSubtitle>
           <SkillIcons>
             <SkillIcon src="https://techinfini.in/wp-content/uploads/2017/09/React-Logo-1.png" />
-            <SkillIcon src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Css-versicherung-logo.svg/1280px-Css-versicherung-logo.svg.png" />
+            <SkillIcon src="https://astro.build/assets/press/astro-icon-light-gradient.png" />
+            <SkillIcon src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/320px-Tailwind_CSS_Logo.svg.png" />
           </SkillIcons>
         </SkillCard>
         <SkillCard>
