@@ -5,7 +5,7 @@ export const TimelineContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 30px;
+  padding: 5rem 30px;
   height: auto;
   position: relative;
   z-index: 1;

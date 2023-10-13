@@ -15,7 +15,7 @@ import {
   Img,
 } from "./InfoElements";
 
-import CV from "../../data/SantiagoMolanoCV-english.pdf";
+import CV from "../../data/SantiagoMolanoCV.pdf";
 
 const InfoSection = ({
   Route,
@@ -53,9 +53,7 @@ const InfoSection = ({
                 <BtnWrap>
                   <Button
                     to={Route}
-                    smooth={true}
                     duration={500}
-                    spy={true}
                     exact="true"
                     offset={-80}
                     primary={primary ? 0 : 1}

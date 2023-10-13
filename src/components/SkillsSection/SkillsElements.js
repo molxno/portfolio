@@ -1,19 +1,11 @@
 import styled from "styled-components";
 
 export const SkillsContainer = styled.div`
-  height: 1200px;
+  padding: 5rem 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media screen and (max-width: 768px) {
-    height: 1400px;
-  }
-
-  @media screen and (max-width: 570px) {
-    height: 1600px;
-  }
 `;
 
 export const Heading = styled.h1`
