@@ -6,10 +6,14 @@ import {
 } from "./ProjectsElements";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Boo from "../../images/boo.png";
+import Cripto from "../../images/cripto.png";
+import Origen from "../../images/origen.png";
+import Gastos from "../../images/gastos.png";
+import Veterinaria from "../../images/veterinaria.png";
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
@@ -30,43 +34,37 @@ const responsive = {
 const projects = [
   {
     name: "Landing Page",
-    background:
-      "https://i.ibb.co/WxxSq0q/Screenshot-from-2023-07-09-17-31-12.png",
+    background: Origen,
     hover:
       "https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png",
-    link: "https://molanosantiago.github.io/origen/",
+    link: "https://origen-mp.vercel.app/",
   },
   {
     name: "Cryptocurrency",
-    background:
-      "https://i.ibb.co/S0jnx2q/Screenshot-from-2023-07-09-17-32-58.png",
+    background: Cripto,
     hover:
       "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
-    link: "https://criptoomonedas-react.netlify.app/",
+    link: "https://cripto-valor.netlify.app/",
   },
   {
     name: "Landing Page",
-    background:
-      "https://i.ibb.co/yXvqG8p/Screenshot-from-2023-10-03-19-29-27.png",
+    background: Boo,
     hover:
       "https://seeklogo.com/images/A/astro-icon-logo-44253BACEE-seeklogo.com.png",
     link: "https://boo-web.vercel.app/",
   },
   {
     name: "Controls costs",
-    background:
-      "https://i.ibb.co/ts5xdh8/Screenshot-from-2023-07-09-17-35-44.png",
+    background: Gastos,
     hover:
       "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
     link: "https://administra-gastos.netlify.app/",
   },
   {
     name: "Veterinary",
-    background:
-      "https://i.ibb.co/r2zHh2m/Screenshot-from-2023-07-09-17-36-38.png",
-    hover:
-      "https://vitejs.dev/logo-with-shadow.png",
-    link: "https://veterinaria-admin-react.netlify.app/",
+    background: Veterinaria,
+    hover: "https://vitejs.dev/logo-with-shadow.png",
+    link: "https://agendador-veterinaria.netlify.app/",
   },
 ];
 

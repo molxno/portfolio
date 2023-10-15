@@ -16,16 +16,16 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink exact='true' to="aboutme" onClick={toggle}>
+          <SidebarLink exact='true' to="aboutme" onClick={toggle} href="#">
             Who is Molxno?
           </SidebarLink>
-          <SidebarLink exact='true' to="experience" onClick={toggle}>
+          <SidebarLink exact='true' to="experience" onClick={toggle} href="#">
             Experience
           </SidebarLink>
-          <SidebarLink exact='true' to="projects" onClick={toggle}>
+          <SidebarLink exact='true' to="projects" onClick={toggle} href="#">
             Projects
           </SidebarLink>
-          <SidebarLink exact='true' to="skills" onClick={toggle}>
+          <SidebarLink exact='true' to="skills" onClick={toggle} href="#">
             Skills
           </SidebarLink>
         </SidebarMenu>
