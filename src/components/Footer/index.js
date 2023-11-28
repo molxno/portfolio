@@ -22,7 +22,7 @@ const Footer = () => {
             <FooterLinkItems>
               <SocialIcons>
                 <SocialIconLink
-                  href="https://twitter.com/DevMolano"
+                  href="https://twitter.com/molxno"
                   target="_blank"
                   aria-label="Twitter"
                 >
