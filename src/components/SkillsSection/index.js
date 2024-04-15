@@ -21,7 +21,7 @@ const SkillsSection = () => {
           <SkillTitle>Backend</SkillTitle>
           <SkillSubtitle>
             <strong>PHP</strong> is my strength but I have also worked with{" "}
-            <strong>Python and Java</strong>.
+            <strong>Python</strong> and <strong>Java</strong>.
           </SkillSubtitle>
           <SkillIcons>
             <SkillIcon
