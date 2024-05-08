@@ -11,6 +11,7 @@ import Cripto from "../../images/cripto.png";
 import Origen from "../../images/origen.png";
 import Gastos from "../../images/gastos.png";
 import Veterinaria from "../../images/veterinaria.png";
+import CRM from "../../images/crm-react.png";
 
 const responsive = {
   superLargeDesktop: {
@@ -38,6 +39,12 @@ const projects = [
     hover:
       "https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png",
     link: "https://origen-mp.vercel.app/",
+  },
+  {
+    name: "CRM",
+    background: CRM,
+    hover: "https://vitejs.dev/logo-with-shadow.png",
+    link: "https://crm-react-front.vercel.app/",
   },
   {
     name: "Cryptocurrency",
@@ -76,7 +83,7 @@ const ProjectsSection = () => {
           <Heading>Projects</Heading>
           <Carousel
             responsive={responsive}
-            autoPlay={true}
+            // autoPlay={true}
             swipeable={true}
             draggable={true}
             showDots={true}
