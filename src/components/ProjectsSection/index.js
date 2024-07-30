@@ -83,7 +83,7 @@ const ProjectsSection = () => {
           <Heading>Projects</Heading>
           <Carousel
             responsive={responsive}
-            // autoPlay={true}
+            autoPlay={true}
             swipeable={true}
             draggable={true}
             showDots={true}

@@ -17,7 +17,7 @@ const HeroSection = ({id}) => {
       <HeroContent>
         <HeaderText>
           <HeaderTitle>
-            molxno
+            Molano
           </HeaderTitle>
           <HeaderSubtitle>
             Portfolio
