@@ -10,8 +10,8 @@ export const aboutMeConfig = {
     imgStart: true,
     img: require('../images/photo.jpeg'),
     alt: 'My photo',
-    dark: false,
-    primary: true,
+    dark: true,
+    primary: false,
     darkText: true,
     Route: '#'
 };

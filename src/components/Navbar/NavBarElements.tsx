@@ -1,8 +1,12 @@
 import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
+import {Link as LinkR} from 'react-router-dom';
+import {Link as LinkS} from 'react-scroll';
 
-export const Nav = styled.nav`
+interface NavProps {
+    scrollNav: boolean;
+}
+
+export const Nav = styled.nav<NavProps>`
     background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
     height: 80px;
     margin-top: -80px;
@@ -63,7 +67,7 @@ export const NavMenu = styled.ul`
     text-align: center;
     margin-right: -22px;
 
-    @media screen and (max-width: 820px){
+    @media screen and (max-width: 820px) {
         display: none;
     }
 `;
@@ -91,4 +95,4 @@ export const NavLinks = styled(LinkS)`
     &:hover {
         color: #fff;
     }
-`
+`;
