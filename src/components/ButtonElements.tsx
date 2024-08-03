@@ -1,9 +1,17 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
-export const Button = styled(Link)`
+// Define the types for the props
+interface ButtonProps {
+    primary?: boolean;
+    big?: boolean;
+    dark?: boolean;
+    fontBig?: boolean;
+}
+
+export const Button = styled(Link)<ButtonProps>`
     border-radius: 50px;
-    background: ${({primary})=> ( primary ? '#b71b25' : '#df2935')};
+    background: ${({primary}) => (primary ? '#b71b25' : '#df2935')};
     white-space: nowrap;
     padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
     color: ${({dark}) => (dark ? '#fff' : '#000')};
@@ -19,7 +27,7 @@ export const Button = styled(Link)`
     font-weight: bold;
 
     &:hover {
-        background: ${({primary}) => ( primary ? '#df2935' : '#b71b25')};
+        background: ${({primary}) => (primary ? '#df2935' : '#b71b25')};
         color: ${({dark}) => (dark ? '#d9dcd9' : '#fff')};
     }
-`
+`;
