@@ -36,7 +36,7 @@ const Footer: FC = () => {
                                     <FaLinkedin/>
                                 </SocialIconLink>
                                 <SocialIconLink
-                                    href="https://github.com/MolanoSantiago"
+                                    href="https://github.com/molxno"
                                     target="_blank"
                                     aria-label="GitHub"
                                 >
