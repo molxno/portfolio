@@ -45,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({toggle}) => {
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
                         <NavLogo to="/" onClick={toggleHome}>
-                            molxno.dev
+                            molxno
                         </NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars/>
