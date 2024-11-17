@@ -6,7 +6,7 @@ interface HeadingProps {
 
 export const ProjectsContainer = styled.div`
     background: #ffffff;
-    padding: 0 30px;
+    padding: 30px 30px;
     height: auto;
     z-index: 1;
 `;

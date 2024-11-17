@@ -1,34 +1,22 @@
 import styled from "styled-components";
 
-// Define the types for any props if needed in the future
-// For now, no props are used in these styled components
-
 export const HeroContainer = styled.div`
     background: #000000;
-    padding: 200px 30px 200px 30px;
-    height: auto;
-    z-index: 1;
+    height: 100vh; /* Ocupa toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const HeroContent = styled.div`
-    width: 100%;
-    padding: 8px 24px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-
-    @media screen and (max-width: 1199px) {
-        display: flex;
-        align-items: center;
-        flex-direction: column-reverse;
-        justify-content: center;
-        gap: 5rem;
-    }
+    text-align: center;
 `;
 
 export const HeaderText = styled.div`
-    width: 50%;
     font-size: 125px;
-    text-align: center;
     line-height: 1em;
     display: flex;
     flex-direction: column;
@@ -40,7 +28,6 @@ export const HeaderText = styled.div`
 
     @media screen and (max-width: 1199px) {
         font-size: 75px;
-        width: 100%;
     }
 
     @media screen and (max-width: 810px) {
@@ -63,20 +50,4 @@ export const HeaderSubtitle = styled.h2`
     color: #d9dcd9;
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
-`;
-
-export const HeaderLogo = styled.div`
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-`;
-
-export const Logo = styled.img`
-    width: 380px;
-
-    @media screen and (max-width: 1199px) {
-        width: 80%;
-    }
 `;

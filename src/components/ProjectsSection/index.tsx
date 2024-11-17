@@ -12,6 +12,7 @@ import Origen from "../../images/origen.png";
 import Gastos from "../../images/gastos.png";
 import Veterinaria from "../../images/veterinaria.png";
 import CRM from "../../images/crm-react.png";
+import Bookstore from "../../images/bookstore.png";
 
 interface Project {
     name: string;
@@ -40,6 +41,13 @@ const responsive = {
 };
 
 const projects: Project[] = [
+    {
+        name: "Bookstore",
+        background: Bookstore,
+        hover:
+            "https://static-00.iconduck.com/assets.00/django-icon-1606x2048-lwmw1z73.png",
+        link: "https://django-app-b6egv.ondigitalocean.app/"
+    },
     {
         name: "Landing Page",
         background: Origen,

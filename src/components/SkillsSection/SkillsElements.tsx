@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 interface HeadingProps {
-    lightText?: boolean;
+  lightText?: boolean;
 }
 
 export const SkillsContainer = styled.div`
-    padding: 5rem 30px;
+    padding: 30px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,7 +66,7 @@ export const SkillCard = styled.div`
     box-shadow: 0 2px 7px gray;
     text-align: center;
     border-radius: 30px;
-    padding: 0 0 1em 0;
+    padding: 1em 0 1em 0;
 `;
 
 export const SkillIcons = styled.div`
@@ -77,8 +77,7 @@ export const SkillIcons = styled.div`
 `;
 
 export const SkillIcon = styled.img`
-    border-radius: 22px;
-    width: 14%; /* Tamaño inicial para dispositivos de tamaño mediano */
+    width: 10%;
     height: auto;
     transition: all 0.2s ease;
     padding: 1em 0;
@@ -88,11 +87,11 @@ export const SkillIcon = styled.img`
     }
 
     @media screen and (max-width: 768px) {
-        width: 15%; /* Reducir el tamaño en dispositivos más pequeños */
+        width: 13%;
     }
 
     @media screen and (max-width: 480px) {
-        width: 16%; /* Reducir aún más el tamaño en dispositivos móviles */
+        width: 16%;
     }
 `;
 

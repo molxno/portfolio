@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
     background: #000000;
-    padding: 0 30px;
+    padding: 30px 30px;
     height: auto;
     z-index: 1;
+    margin-top: 30px;
 
     @media screen and (max-width: 820px) {
         margin-top: 3rem;
