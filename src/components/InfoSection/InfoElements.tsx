@@ -19,6 +19,7 @@ interface SubtitleProps {
 export const InfoContainer = styled.div<InfoContainerProps>`
     background: ${({lightBg}) => (lightBg ? "#fff" : "#000")};
     padding: 30px 30px;
+    margin: 30px;
     height: auto;
     z-index: 1;
 

@@ -98,7 +98,7 @@ const ProjectsSection: React.FC = () => {
                     <Heading>Projects</Heading>
                     <Carousel
                         responsive={responsive}
-                        autoPlay={true}
+                        autoPlay={false}
                         swipeable={true}
                         draggable={true}
                         showDots={true}
