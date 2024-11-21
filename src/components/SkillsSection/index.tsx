@@ -29,7 +29,7 @@ const SkillsSection: React.FC = () => {
           </SkillSubtitle>
           <SkillIcons>
             <SkillIcon
-              src="https://static-00.iconduck.com/assets.00/django-icon-1606x2048-lwmw1z73.png"
+              src="https://img.icons8.com/?size=512&id=qV-JzWYl9dzP&format=png"
               alt="django logo"
             />
             <SkillIcon
