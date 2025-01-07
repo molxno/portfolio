@@ -11,6 +11,7 @@ import {
   SkillsWrapper,
 } from "./SkillsElements";
 import sqlServerIcon from "../../images/sql-server.png";
+import supabaseIcon from "../../images/supabase-logo-icon.png";
 
 const SkillsSection: React.FC = () => {
   return (
@@ -37,7 +38,7 @@ const SkillsSection: React.FC = () => {
               alt="laravel logo"
             />
             <SkillIcon
-              src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png"
+              src={supabaseIcon}
               alt="supabase logo"
             />
           </SkillIcons>
