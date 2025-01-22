@@ -78,7 +78,7 @@ const projects: Project[] = [
     name: "Landing Page",
     background: Boo,
     hover:
-      "https://seeklogo.com/images/A/astro-icon-logo-44253BACEE-seeklogo.com.png",
+      "https://astro.build/assets/press/astro-icon-light-gradient.png",
     link: "https://boo-web.vercel.app/",
   },
   {
