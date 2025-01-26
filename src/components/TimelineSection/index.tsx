@@ -90,7 +90,7 @@ const TimelineSection: React.FC = () => {
                                     primary={false}
                                     dark={true}
                                 >
-                                    Linkedin
+                                    LinkedIn
                                 </Button>
                             </BtnWrap>
                         </VerticalTimelineElement>
