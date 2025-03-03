@@ -54,13 +54,13 @@ const projects: Project[] = [
       "https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png",
     link: "https://origen-mp.vercel.app/",
   },
-  {
-    name: "Bookstore",
-    background: Bookstore,
-    hover:
-      "https://img.icons8.com/?size=512&id=qV-JzWYl9dzP&format=png",
-    link: "https://django-app-b6egv.ondigitalocean.app/"
-  },
+  // {
+  //   name: "Bookstore",
+  //   background: Bookstore,
+  //   hover:
+  //     "https://img.icons8.com/?size=512&id=qV-JzWYl9dzP&format=png",
+  //   link: "https://django-app-b6egv.ondigitalocean.app/"
+  // },
   {
     name: "Cryptocurrency",
     background: Cripto,
