@@ -11,8 +11,6 @@ import Cripto from "../../images/cripto.png";
 import Origen from "../../images/origen.png";
 import Gastos from "../../images/gastos.png";
 import Veterinaria from "../../images/veterinaria.png";
-import CRM from "../../images/crm-react.png";
-import Bookstore from "../../images/bookstore.png";
 
 interface Project {
   name: string;
@@ -23,30 +21,24 @@ interface Project {
 
 const responsive = {
   superLargeDesktop: {
-    breakpoint: {max: 4000, min: 3000},
+    breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
   desktop: {
-    breakpoint: {max: 3000, min: 1024},
+    breakpoint: { max: 3000, min: 1024 },
     items: 3,
   },
   tablet: {
-    breakpoint: {max: 1024, min: 464},
+    breakpoint: { max: 1024, min: 464 },
     items: 2,
   },
   mobile: {
-    breakpoint: {max: 464, min: 0},
+    breakpoint: { max: 464, min: 0 },
     items: 1,
   },
 };
 
 const projects: Project[] = [
-  // {
-  //   name: "CRM",
-  //   background: CRM,
-  //   hover: "https://vitejs.dev/logo-with-shadow.png",
-  //   link: "https://crm-react-front.vercel.app/",
-  // },
   {
     name: "Landing Page",
     background: Origen,
@@ -54,13 +46,6 @@ const projects: Project[] = [
       "https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png",
     link: "https://origen-mp.vercel.app/",
   },
-  // {
-  //   name: "Bookstore",
-  //   background: Bookstore,
-  //   hover:
-  //     "https://img.icons8.com/?size=512&id=qV-JzWYl9dzP&format=png",
-  //   link: "https://django-app-b6egv.ondigitalocean.app/"
-  // },
   {
     name: "Cryptocurrency",
     background: Cripto,
@@ -77,8 +62,7 @@ const projects: Project[] = [
   {
     name: "Landing Page",
     background: Boo,
-    hover:
-      "https://astro.build/assets/press/astro-icon-light-gradient.png",
+    hover: "https://astro.build/assets/press/astro-icon-light-gradient.png",
     link: "https://boo-web.vercel.app/",
   },
   {
@@ -117,8 +101,8 @@ const ProjectsSection: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={project.background} alt="first img"/>
-                    <img src={project.hover} alt="second img"/>
+                    <img src={project.background} alt="first img" />
+                    <img src={project.hover} alt="second img" />
                   </a>
                   <h5>{project.name}</h5>
                 </article>
