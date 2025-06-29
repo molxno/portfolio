@@ -50,7 +50,7 @@ const Footer: FC = () => {
         <FooterText>
           <FooterTextWrap>
             <WebsiteRights>
-              © molxno, Property of a Backend Magician.
+              © molxno, Property of a Backend Wizard.
               <br/>
               Made with ❤️
             </WebsiteRights>
