@@ -11,6 +11,8 @@ import Cripto from "../../images/cripto.png";
 import Origen from "../../images/origen.png";
 import Gastos from "../../images/gastos.png";
 import Veterinaria from "../../images/veterinaria.png";
+import Crm from "../../images/crm-react.png";
+import Reverb from "../../images/reverb.png";
 
 interface Project {
   name: string;
@@ -40,11 +42,25 @@ const responsive = {
 
 const projects: Project[] = [
   {
+    name: "Real-time Orders",
+    background: Reverb,
+    hover:
+      "https://files.svgcdn.io/devicon/livewire.svg",
+    link: "https://reverb.molxno.dev/",
+  },
+  {
+    name: "CRM",
+    background: Crm,
+    hover:
+      "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
+    link: "https://crm.molxno.dev/",
+  },
+  {
     name: "Landing Page",
     background: Origen,
     hover:
       "https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png",
-    link: "https://origen-mp.vercel.app/",
+    link: "https://origen.molxno.dev/",
   },
   {
     name: "Cryptocurrency",
@@ -63,7 +79,7 @@ const projects: Project[] = [
     name: "Landing Page",
     background: Boo,
     hover: "https://astro.build/assets/press/astro-icon-light-gradient.png",
-    link: "https://boo-web.vercel.app/",
+    link: "https://boo.molxno.dev/",
   },
   {
     name: "Controls costs",
