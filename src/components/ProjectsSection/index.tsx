@@ -67,13 +67,13 @@ const projects: Project[] = [
     background: Cripto,
     hover:
       "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
-    link: "https://cripto-valor.netlify.app/",
+    link: "https://crypto.molxno.dev/",
   },
   {
     name: "Veterinary",
     background: Veterinaria,
     hover: "https://vitejs.dev/logo-with-shadow.png",
-    link: "https://agendador-veterinaria.netlify.app/",
+    link: "https://veterinary.molxno.dev/",
   },
   {
     name: "Landing Page",
@@ -86,7 +86,7 @@ const projects: Project[] = [
     background: Gastos,
     hover:
       "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
-    link: "https://administra-gastos.netlify.app/",
+    link: "https://costs.molxno.dev/",
   },
 ];
 
