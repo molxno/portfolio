@@ -21,12 +21,17 @@ const SkillsSection: React.FC = () => {
         <SkillCardLong>
           <SkillTitle>Backend</SkillTitle>
           <SkillSubtitle>
-            I have gained experience in backend development using various languages such as PHP, Python and TypeScript.
-            My main achievements include working extensively with PHP using the <strong>Laravel</strong> framework,
-            developing
-            applications with Python using <strong>Django</strong> and <strong>FastAPI</strong>, and working with
-            TypeScript in{" "}
-            <strong>Supabase</strong>.
+            I specialize in <strong>backend development</strong> with a focus on
+            building <strong>scalable</strong>, <strong>secure</strong>, and{" "}
+            <strong>well-architected systems</strong>. My core expertise lies in{" "}
+            <strong>PHP with Laravel</strong>, where I’ve led the development of
+            production-grade applications. I’ve also delivered robust APIs and
+            services using <strong>Python</strong> with <strong>Django</strong>{" "}
+            and <strong>FastAPI</strong>, and worked with{" "}
+            <strong>TypeScript</strong> in <strong>Supabase</strong> to
+            streamline modern backend workflows. I prioritize{" "}
+            <strong>clean architecture</strong>, <strong>performance</strong>,
+            and <strong>maintainability</strong> in every solution I build.
           </SkillSubtitle>
           <SkillIcons>
             <SkillIcon
@@ -37,17 +42,21 @@ const SkillsSection: React.FC = () => {
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
               alt="laravel logo"
             />
-            <SkillIcon
-              src={supabaseIcon}
-              alt="supabase logo"
-            />
+            <SkillIcon src={supabaseIcon} alt="supabase logo" />
           </SkillIcons>
         </SkillCardLong>
         <SkillCard>
           <SkillTitle>Frontend</SkillTitle>
           <SkillSubtitle>
-            I have experience in frontend development using <strong>React</strong>, <strong>Astro</strong> and{" "}
-            <strong>Typescript</strong>.
+            I have experience in <strong>frontend development</strong> focused
+            on creating <strong>responsive</strong>, <strong>accessible</strong>
+            , and <strong>user-centered interfaces</strong>. I’ve worked with
+            modern technologies like <strong>React</strong>,{" "}
+            <strong>Astro</strong>, and <strong>TypeScript</strong>, building
+            dynamic web applications and integrating them seamlessly with
+            backend services. I value <strong>clean UI architecture</strong>,{" "}
+            <strong>performance optimization</strong>, and delivering intuitive
+            user experiences.
           </SkillSubtitle>
           <SkillIcons>
             <SkillIcon
@@ -67,12 +76,16 @@ const SkillsSection: React.FC = () => {
         <SkillCard>
           <SkillTitle>Database</SkillTitle>
           <SkillSubtitle>
-            I have handled <strong>SQLServer</strong> and{" "}
-            <strong>PostgreSQL</strong> but <strong>MySQL</strong> is the one
-            with which I have more experience.
+            I have worked with <strong>SQL Server</strong> and{" "}
+            <strong>PostgreSQL</strong>, but my strongest experience is with{" "}
+            <strong>MySQL</strong>, particularly in designing, optimizing, and
+            managing relational databases in production environments. I focus on{" "}
+            <strong>data integrity</strong>, <strong>query performance</strong>,
+            and <strong>scalable schema design</strong> to support high-demand
+            applications.
           </SkillSubtitle>
           <SkillIcons>
-            <SkillIcon src={sqlServerIcon} alt="sql server logo"/>
+            <SkillIcon src={sqlServerIcon} alt="sql server logo" />
             <SkillIcon
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/745px-Postgresql_elephant.svg.png"
               alt="postgresql logo"

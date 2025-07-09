@@ -4,20 +4,10 @@ export const aboutMeConfig = {
   lightText: false,
   lightTextDesc: true,
   topLine: 'About Me',
-  headline: 'Systems Engineer',
+  headline: 'Tech Lead & Software Architect | PHP (Laravel), Clean Architecture, Fintech',
   description: `
-        Hi! I'm Santiago Molano, a passionate software developer based in Medellin, Colombia 🇨🇴. 
-        Currently pursuing a degree in Systems Engineering, I recently completed a specialization in 
-        Cybersecurity through Google's professional programs. My adaptability and curiosity allow me to 
-        actively contribute to any tech stack, making me a versatile team player.
-        
-        Over the years, I have delved into diverse projects that not only honed my technical skills but 
-        also enhanced my problem-solving capabilities. I thrive in dynamic environments, whether it's 
-        building robust backend systems, crafting interactive frontend applications, or exploring the 
-        ever-evolving fields of cybersecurity and financial technologies.
-
-        I'm committed to continuous learning and adapting to new technologies, frameworks, or tools, 
-        making me a valuable asset in rapidly changing tech landscapes. Let's build something great together!
+        I’m Santiago Molano, a backend developer with 3+ years of experience leading Laravel projects in fintech and banking. I specialize in clean architecture, scalable APIs, and secure deployments. I’ve led technical initiatives, mentored developers, and taken ownership of critical backend systems.
+        Certified in cybersecurity and currently enhancing my English (B1 → B2), I’m focused on stepping into a Tech Lead or Software Architect role — where strategy meets code and impact is measurable.
     `,
   buttonLabel: 'Download Curriculum Vitae',
   imgStart: true,

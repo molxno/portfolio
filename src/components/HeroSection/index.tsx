@@ -17,7 +17,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({id}) => {
       <HeroContent>
         <HeaderText>
           <HeaderTitle>Molano</HeaderTitle>
-          <HeaderSubtitle>Portfolio</HeaderSubtitle>
+          <HeaderSubtitle>Santiago</HeaderSubtitle>
         </HeaderText>
       </HeroContent>
     </HeroContainer>
