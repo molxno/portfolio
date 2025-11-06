@@ -17,7 +17,6 @@ import Reverb from "../../images/reverb.png";
 interface Project {
   name: string;
   background: string;
-  hover: string;
   link: string;
 }
 
@@ -44,48 +43,36 @@ const projects: Project[] = [
   {
     name: "Real-time Orders",
     background: Reverb,
-    hover:
-      "https://files.svgcdn.io/devicon/livewire.svg",
     link: "https://reverb.molxno.dev/",
   },
   {
     name: "CRM",
     background: Crm,
-    hover:
-      "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
     link: "https://crm.molxno.dev/",
   },
   {
     name: "Landing Page",
     background: Origen,
-    hover:
-      "https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png",
     link: "https://origen.molxno.dev/",
   },
   {
     name: "Cryptocurrency",
     background: Cripto,
-    hover:
-      "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
     link: "https://crypto.molxno.dev/",
   },
   {
     name: "Veterinary",
     background: Veterinaria,
-    hover: "https://vitejs.dev/logo-with-shadow.png",
     link: "https://veterinary.molxno.dev/",
   },
   {
     name: "Landing Page",
     background: Boo,
-    hover: "https://astro.build/assets/press/astro-icon-light-gradient.png",
     link: "https://boo.molxno.dev/",
   },
   {
     name: "Controls costs",
     background: Gastos,
-    hover:
-      "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
     link: "https://costs.molxno.dev/",
   },
 ];
@@ -108,6 +95,7 @@ const ProjectsSection: React.FC = () => {
             arrows={false}
             renderButtonGroupOutside={true}
             dotListClass="custom-dot-list-style"
+            autoPlaySpeed={2000}
           >
             {projects.map((project, index) => {
               return (
@@ -117,8 +105,7 @@ const ProjectsSection: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={project.background} alt="first img" />
-                    <img src={project.hover} alt="second img" />
+                    <img src={project.background} alt="project image" />
                   </a>
                   <h5>{project.name}</h5>
                 </article>
