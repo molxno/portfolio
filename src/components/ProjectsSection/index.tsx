@@ -99,7 +99,7 @@ const ProjectsSection: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={project.background} alt="project image" />
+                    <img src={project.background} alt={project.name + " project"} />
                   </a>
                   <h5>{project.name}</h5>
                 </article>
