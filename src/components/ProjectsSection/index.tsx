@@ -12,7 +12,6 @@ import Origen from "../../images/origen.png";
 import Gastos from "../../images/gastos.png";
 import Veterinaria from "../../images/veterinaria.png";
 import Crm from "../../images/crm-react.png";
-import Reverb from "../../images/reverb.png";
 
 interface Project {
   name: string;
@@ -40,11 +39,6 @@ const responsive = {
 };
 
 const projects: Project[] = [
-  {
-    name: "Real-time Orders",
-    background: Reverb,
-    link: "https://reverb.molxno.dev/",
-  },
   {
     name: "CRM",
     background: Crm,
