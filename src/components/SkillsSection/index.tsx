@@ -12,6 +12,13 @@ import {
 } from "./SkillsElements";
 import sqlServerIcon from "../../images/sql-server.png";
 import supabaseIcon from "../../images/supabase-logo-icon.png";
+import djangoIcon from "../../images/django.png";
+import laravelIcon from "../../images/laravel.svg";
+import reactIcon from "../../images/react.svg";
+import astroIcon from "../../images/astro.png";
+import typescriptIcon from "../../images/typescript.svg";
+import postgresqlIcon from "../../images/postgresql.svg";
+import mysqlIcon from "../../images/mysql.svg";
 
 const SkillsSection: React.FC = () => {
   return (
@@ -34,14 +41,8 @@ const SkillsSection: React.FC = () => {
             and <strong>maintainability</strong> in every solution I build.
           </SkillSubtitle>
           <SkillIcons>
-            <SkillIcon
-              src="https://img.icons8.com/?size=512&id=qV-JzWYl9dzP&format=png"
-              alt="django logo"
-            />
-            <SkillIcon
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
-              alt="laravel logo"
-            />
+            <SkillIcon src={djangoIcon} alt="django logo" />
+            <SkillIcon src={laravelIcon} alt="laravel logo" />
             <SkillIcon src={supabaseIcon} alt="supabase logo" />
           </SkillIcons>
         </SkillCardLong>
@@ -59,18 +60,9 @@ const SkillsSection: React.FC = () => {
             user experiences.
           </SkillSubtitle>
           <SkillIcons>
-            <SkillIcon
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-              alt="react logo"
-            />
-            <SkillIcon
-              src="https://astro.build/assets/press/astro-icon-light-gradient.png"
-              alt="astro logo"
-            />
-            <SkillIcon
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png"
-              alt="typescript logo"
-            />
+            <SkillIcon src={reactIcon} alt="react logo" />
+            <SkillIcon src={astroIcon} alt="astro logo" />
+            <SkillIcon src={typescriptIcon} alt="typescript logo" />
           </SkillIcons>
         </SkillCard>
         <SkillCard>
@@ -86,14 +78,8 @@ const SkillsSection: React.FC = () => {
           </SkillSubtitle>
           <SkillIcons>
             <SkillIcon src={sqlServerIcon} alt="sql server logo" />
-            <SkillIcon
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/745px-Postgresql_elephant.svg.png"
-              alt="postgresql logo"
-            />
-            <SkillIcon
-              src="https://upload.wikimedia.org/wikipedia/de/d/dd/MySQL_logo.svg"
-              alt="mysql logo"
-            />
+            <SkillIcon src={postgresqlIcon} alt="postgresql logo" />
+            <SkillIcon src={mysqlIcon} alt="mysql logo" />
           </SkillIcons>
         </SkillCard>
       </SkillsWrapper>
