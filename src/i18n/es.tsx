@@ -91,30 +91,43 @@ export const es: Dictionary = {
   },
   projects: {
     heading: "Proyectos",
+    region: "Carrusel de proyectos",
+    visitSite: "Ver sitio",
+    viewRepo: "Ver repositorio",
+    pause: "Pausar carrusel",
+    play: "Reproducir carrusel",
+    origin: {
+      alternova: "Alternova",
+      own: "Proyecto propio",
+    },
     items: {
-      crm: {
-        name: "CRM",
-        alt: "Proyecto CRM",
+      kaval: {
+        name: "Kaval Pay",
+        alt: "BAM Guatemala y Nequi Guatemala",
+        description:
+          "Infraestructura transaccional que convierte comercios en puntos de servicio en tiempo real conectados a entidades financieras.",
+      },
+      sky: {
+        name: "Sky Therapeutics",
+        alt: "Alternova, Sky Therapeutics y Children's Learning Clinic",
+        description:
+          "Plataforma de salud digital para personas con TDAH. Backend de los juegos en Laravel y panel de administración en Django.",
+      },
+      tecnicopa: {
+        name: "TecniCopa",
+        alt: "Página de TecniCopa",
+        description:
+          "Soporte técnico a domicilio en Copacabana, Antioquia, y su landing.",
       },
       origen: {
-        name: "Página de aterrizaje",
-        alt: "Proyecto de página de aterrizaje",
-      },
-      crypto: {
-        name: "Criptomonedas",
-        alt: "Proyecto de criptomonedas",
-      },
-      veterinary: {
-        name: "Veterinaria",
-        alt: "Proyecto de veterinaria",
+        name: "Origen",
+        alt: "Página de Origen",
+        description: "Landing de marketing digital y publicidad.",
       },
       boo: {
-        name: "Página de aterrizaje",
-        alt: "Proyecto de página de aterrizaje",
-      },
-      costs: {
-        name: "Control de costos",
-        alt: "Proyecto de control de costos",
+        name: "Boo",
+        alt: "Página de Boo",
+        description: "Landing de un producto de reservas.",
       },
     },
   },

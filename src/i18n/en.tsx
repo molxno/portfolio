@@ -90,30 +90,43 @@ export const en = {
   },
   projects: {
     heading: "Projects",
+    region: "Project carousel",
+    visitSite: "Visit site",
+    viewRepo: "View repo",
+    pause: "Pause carousel",
+    play: "Play carousel",
+    origin: {
+      alternova: "Alternova",
+      own: "Own project",
+    },
     items: {
-      crm: {
-        name: "CRM",
-        alt: "CRM project",
+      kaval: {
+        name: "Kaval Pay",
+        alt: "BAM Guatemala and Nequi Guatemala",
+        description:
+          "Transactional infrastructure that turns merchants into real-time service points connected to financial institutions.",
+      },
+      sky: {
+        name: "Sky Therapeutics",
+        alt: "Alternova, Sky Therapeutics, and Children's Learning Clinic",
+        description:
+          "Digital health platform for people with ADHD. Backend for the games in Laravel and the admin panel in Django.",
+      },
+      tecnicopa: {
+        name: "TecniCopa",
+        alt: "TecniCopa landing page",
+        description:
+          "On-site computer support in Copacabana, Antioquia, and its landing page.",
       },
       origen: {
-        name: "Landing Page",
-        alt: "Landing Page project",
-      },
-      crypto: {
-        name: "Cryptocurrency",
-        alt: "Cryptocurrency project",
-      },
-      veterinary: {
-        name: "Veterinary",
-        alt: "Veterinary project",
+        name: "Origen",
+        alt: "Origen landing page",
+        description: "Digital marketing and advertising landing page.",
       },
       boo: {
-        name: "Landing Page",
-        alt: "Landing Page project",
-      },
-      costs: {
-        name: "Controls costs",
-        alt: "Controls costs project",
+        name: "Boo",
+        alt: "Boo landing page",
+        description: "Landing page for an appointment-booking product.",
       },
     },
   },
