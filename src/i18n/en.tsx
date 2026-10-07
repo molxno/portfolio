@@ -113,58 +113,59 @@ export const en = {
         <>
           I specialize in <strong>backend development</strong> with a focus on
           building <strong>scalable</strong>, <strong>secure</strong>, and{" "}
-          <strong>well-architected systems</strong>. My core expertise lies in{" "}
-          <strong>PHP with Laravel</strong>, where I’ve led the development of
-          production-grade applications. I’ve also delivered robust APIs and
-          services using <strong>Python</strong> with <strong>Django</strong>{" "}
-          and <strong>FastAPI</strong>, and worked with{" "}
-          <strong>TypeScript</strong> in <strong>Supabase</strong> to
-          streamline modern backend workflows. I prioritize{" "}
-          <strong>clean architecture</strong>, <strong>performance</strong>,
-          and <strong>maintainability</strong> in every solution I build.
+          <strong>well-architected systems</strong>. My core expertise is{" "}
+          <strong>Laravel</strong>. I also deliver APIs and services with{" "}
+          <strong>Django</strong> and <strong>FastAPI</strong>, and I prioritize{" "}
+          <strong>clean architecture</strong>, <strong>performance</strong>, and{" "}
+          <strong>maintainability</strong>.
         </>
       ),
     },
     frontend: {
-      title: "Frontend",
+      title: "Frontend / Mobile",
       subtitle: (
         <>
-          I have experience in <strong>frontend development</strong> focused
-          on creating <strong>responsive</strong>, <strong>accessible</strong>
-          , and <strong>user-centered interfaces</strong>. I’ve worked with
-          modern technologies like <strong>React</strong>,{" "}
-          <strong>Astro</strong>, and <strong>TypeScript</strong>, building
-          dynamic web applications and integrating them seamlessly with
-          backend services. I value <strong>clean UI architecture</strong>,{" "}
-          <strong>performance optimization</strong>, and delivering intuitive
-          user experiences.
+          I build <strong>responsive</strong>, <strong>accessible</strong>{" "}
+          interfaces with <strong>React</strong>, <strong>Vue</strong>, and{" "}
+          <strong>Astro</strong>, and Android apps with{" "}
+          <strong>Kotlin</strong>.
         </>
       ),
     },
     database: {
-      title: "Database",
+      title: "Databases",
       subtitle: (
         <>
-          I have worked with <strong>SQL Server</strong> and{" "}
-          <strong>PostgreSQL</strong>, but my strongest experience is with{" "}
-          <strong>MySQL</strong>, particularly in designing, optimizing, and
-          managing relational databases in production environments. I focus on{" "}
+          I work with <strong>MySQL</strong>, <strong>PostgreSQL</strong>, and{" "}
+          <strong>SQL Server</strong>, with a focus on{" "}
           <strong>data integrity</strong>, <strong>query performance</strong>,
-          and <strong>scalable schema design</strong> to support high-demand
-          applications.
+          and <strong>scalable schema design</strong>.
         </>
       ),
     },
-    logos: {
-      django: "django logo",
-      laravel: "laravel logo",
-      supabase: "supabase logo",
-      react: "react logo",
-      astro: "astro logo",
-      typescript: "typescript logo",
-      sqlServer: "sql server logo",
-      postgresql: "postgresql logo",
-      mysql: "mysql logo",
+    cloud: {
+      title: "Cloud & DevOps",
+      subtitle: (
+        <>
+          <strong>AWS</strong>, <strong>Docker</strong>, and{" "}
+          <strong>GitHub Actions</strong>.
+        </>
+      ),
+    },
+    items: {
+      laravel: "Laravel",
+      django: "Django",
+      fastapi: "FastAPI",
+      react: "React",
+      vue: "Vue",
+      kotlin: "Kotlin",
+      astro: "Astro",
+      mysql: "MySQL",
+      postgresql: "PostgreSQL",
+      sqlserver: "SQL Server",
+      aws: "AWS",
+      docker: "Docker",
+      githubactions: "GitHub Actions",
     },
   },
   footer: {
