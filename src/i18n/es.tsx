@@ -114,59 +114,60 @@ export const es: Dictionary = {
         <>
           Me especializo en el <strong>desarrollo backend</strong> con foco en
           construir sistemas <strong>escalables</strong>, <strong>seguros</strong> y{" "}
-          <strong>bien arquitecturados</strong>. Mi experiencia principal está en{" "}
-          <strong>PHP con Laravel</strong>, donde he liderado el desarrollo de
-          aplicaciones listas para producción. También he entregado APIs y
-          servicios robustos usando <strong>Python</strong> con <strong>Django</strong>{" "}
-          y <strong>FastAPI</strong>, y he trabajado con{" "}
-          <strong>TypeScript</strong> en <strong>Supabase</strong> para
-          agilizar flujos backend modernos. Priorizo la{" "}
-          <strong>arquitectura limpia</strong>, el <strong>rendimiento</strong>{" "}
-          y la <strong>mantenibilidad</strong> en cada solución que construyo.
+          <strong>bien arquitecturados</strong>. Mi experiencia principal es{" "}
+          <strong>Laravel</strong>. También entrego APIs y servicios con{" "}
+          <strong>Django</strong> y <strong>FastAPI</strong>, y priorizo la{" "}
+          <strong>arquitectura limpia</strong>, el <strong>rendimiento</strong> y
+          la <strong>mantenibilidad</strong>.
         </>
       ),
     },
     frontend: {
-      title: "Frontend",
+      title: "Frontend / Mobile",
       subtitle: (
         <>
-          Tengo experiencia en <strong>desarrollo frontend</strong> enfocado
-          en crear interfaces <strong>responsivas</strong>, <strong>accesibles</strong>
-          {" "}y <strong>centradas en el usuario</strong>. He trabajado con
-          tecnologías modernas como <strong>React</strong>,{" "}
-          <strong>Astro</strong> y <strong>TypeScript</strong>, construyendo
-          aplicaciones web dinámicas e integrándolas de forma fluida con
-          servicios backend. Valoro una <strong>arquitectura de UI limpia</strong>,{" "}
-          la <strong>optimización de rendimiento</strong> y entregar experiencias
-          de usuario intuitivas.
+          Construyo interfaces <strong>responsivas</strong> y{" "}
+          <strong>accesibles</strong> con <strong>React</strong>,{" "}
+          <strong>Vue</strong> y <strong>Astro</strong>, y apps Android con{" "}
+          <strong>Kotlin</strong>.
         </>
       ),
     },
     database: {
-      title: "Base de datos",
+      title: "Bases de datos",
       subtitle: (
         <>
-          He trabajado con <strong>SQL Server</strong> y{" "}
-          <strong>PostgreSQL</strong>, pero mi experiencia más sólida es con{" "}
-          <strong>MySQL</strong>, en especial diseñando, optimizando y
-          gestionando bases de datos relacionales en entornos de producción. Me
-          enfoco en la <strong>integridad de los datos</strong>, el{" "}
+          Trabajo con <strong>MySQL</strong>, <strong>PostgreSQL</strong> y{" "}
+          <strong>SQL Server</strong>, con foco en la{" "}
+          <strong>integridad de los datos</strong>, el{" "}
           <strong>rendimiento de las consultas</strong> y un{" "}
-          <strong>diseño de esquema escalable</strong> para soportar
-          aplicaciones de alta demanda.
+          <strong>diseño de esquema escalable</strong>.
         </>
       ),
     },
-    logos: {
-      django: "logo de django",
-      laravel: "logo de laravel",
-      supabase: "logo de supabase",
-      react: "logo de react",
-      astro: "logo de astro",
-      typescript: "logo de typescript",
-      sqlServer: "logo de sql server",
-      postgresql: "logo de postgresql",
-      mysql: "logo de mysql",
+    cloud: {
+      title: "Cloud y DevOps",
+      subtitle: (
+        <>
+          <strong>AWS</strong>, <strong>Docker</strong> y{" "}
+          <strong>GitHub Actions</strong>.
+        </>
+      ),
+    },
+    items: {
+      laravel: "Laravel",
+      django: "Django",
+      fastapi: "FastAPI",
+      react: "React",
+      vue: "Vue",
+      kotlin: "Kotlin",
+      astro: "Astro",
+      mysql: "MySQL",
+      postgresql: "PostgreSQL",
+      sqlserver: "SQL Server",
+      aws: "AWS",
+      docker: "Docker",
+      githubactions: "GitHub Actions",
     },
   },
   footer: {
