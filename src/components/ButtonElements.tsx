@@ -9,13 +9,9 @@ interface ButtonProps {
     fontBig?: boolean;
 }
 
-export const Button = styled(Link)<ButtonProps>`
+const buttonStyles = `
     border-radius: 50px;
-    background: ${({primary}) => (primary ? '#b71b25' : '#df2935')};
     white-space: nowrap;
-    padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-    color: ${({dark}) => (dark ? '#fff' : '#000')};
-    font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
     outline: none;
     border: none;
     cursor: pointer;
@@ -23,11 +19,42 @@ export const Button = styled(Link)<ButtonProps>`
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.2s ease-in-out;
     font-weight: bold;
+`;
+
+export const Button = styled(Link)<ButtonProps>`
+    ${buttonStyles}
+    background: ${({primary}) => (primary ? '#b71b25' : '#df2935')};
+    padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+    color: ${({dark}) => (dark ? '#fff' : '#000')};
+    font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+    transition: all 0.2s ease-in-out;
 
     &:hover {
         background: ${({primary}) => (primary ? '#df2935' : '#b71b25')};
         color: ${({dark}) => (dark ? '#d9dcd9' : '#fff')};
+    }
+`;
+
+export const DownloadButton = styled.a<ButtonProps>`
+    ${buttonStyles}
+    background: ${({primary}) => (primary ? '#b71b25' : '#df2935')};
+    padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+    color: ${({dark}) => (dark ? '#fff' : '#000')};
+    font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background: ${({primary}) => (primary ? '#df2935' : '#b71b25')};
+        color: ${({dark}) => (dark ? '#d9dcd9' : '#fff')};
+    }
+
+    &:focus-visible {
+        outline: 2px solid #df2935;
+        outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
     }
 `;

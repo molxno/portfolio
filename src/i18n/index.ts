@@ -1,3 +1,4 @@
+export {cvFiles} from "./cv";
 export {applyDocumentLanguage} from "./applyDocumentLanguage";
 export {
   detectLanguage,

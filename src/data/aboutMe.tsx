@@ -7,5 +7,4 @@ export const aboutMeConfig = {
   dark: true,
   primary: false,
   darkText: true,
-  Route: "#",
 };
