@@ -24,14 +24,28 @@ export const CloseIcon = styled(FaTimes)`
     color: #b71b25;
 `;
 
-export const Icon = styled.div`
+export const Icon = styled.button`
     position: absolute;
     top: 1.2rem;
     right: 1.5rem;
     background: transparent;
+    border: 0;
+    padding: 0;
     font-size: 2rem;
     cursor: pointer;
     outline: none;
+    color: inherit;
+
+    &:focus-visible {
+        outline: 2px solid #df2935;
+        outline-offset: 4px;
+    }
+`;
+
+export const SidebarLanguage = styled.div`
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
 `;
 
 export const SidebarWrapper = styled.div`

@@ -19,67 +19,40 @@ import astroIcon from "../../images/astro.png";
 import typescriptIcon from "../../images/typescript.svg";
 import postgresqlIcon from "../../images/postgresql.svg";
 import mysqlIcon from "../../images/mysql.svg";
+import {useI18n} from "../../i18n";
 
 const SkillsSection: React.FC = () => {
+  const {t} = useI18n();
+
   return (
-    <SkillsContainer id="skills">
-      <Heading>Skills</Heading>
+    <SkillsContainer id={t.sections.skills}>
+      <Heading>{t.skills.heading}</Heading>
       <SkillsWrapper>
         <SkillCardLong>
-          <SkillTitle>Backend</SkillTitle>
-          <SkillSubtitle>
-            I specialize in <strong>backend development</strong> with a focus on
-            building <strong>scalable</strong>, <strong>secure</strong>, and{" "}
-            <strong>well-architected systems</strong>. My core expertise lies in{" "}
-            <strong>PHP with Laravel</strong>, where I’ve led the development of
-            production-grade applications. I’ve also delivered robust APIs and
-            services using <strong>Python</strong> with <strong>Django</strong>{" "}
-            and <strong>FastAPI</strong>, and worked with{" "}
-            <strong>TypeScript</strong> in <strong>Supabase</strong> to
-            streamline modern backend workflows. I prioritize{" "}
-            <strong>clean architecture</strong>, <strong>performance</strong>,
-            and <strong>maintainability</strong> in every solution I build.
-          </SkillSubtitle>
+          <SkillTitle>{t.skills.backend.title}</SkillTitle>
+          <SkillSubtitle>{t.skills.backend.subtitle}</SkillSubtitle>
           <SkillIcons>
-            <SkillIcon src={djangoIcon} alt="django logo" />
-            <SkillIcon src={laravelIcon} alt="laravel logo" />
-            <SkillIcon src={supabaseIcon} alt="supabase logo" />
+            <SkillIcon src={djangoIcon} alt={t.skills.logos.django} />
+            <SkillIcon src={laravelIcon} alt={t.skills.logos.laravel} />
+            <SkillIcon src={supabaseIcon} alt={t.skills.logos.supabase} />
           </SkillIcons>
         </SkillCardLong>
         <SkillCard>
-          <SkillTitle>Frontend</SkillTitle>
-          <SkillSubtitle>
-            I have experience in <strong>frontend development</strong> focused
-            on creating <strong>responsive</strong>, <strong>accessible</strong>
-            , and <strong>user-centered interfaces</strong>. I’ve worked with
-            modern technologies like <strong>React</strong>,{" "}
-            <strong>Astro</strong>, and <strong>TypeScript</strong>, building
-            dynamic web applications and integrating them seamlessly with
-            backend services. I value <strong>clean UI architecture</strong>,{" "}
-            <strong>performance optimization</strong>, and delivering intuitive
-            user experiences.
-          </SkillSubtitle>
+          <SkillTitle>{t.skills.frontend.title}</SkillTitle>
+          <SkillSubtitle>{t.skills.frontend.subtitle}</SkillSubtitle>
           <SkillIcons>
-            <SkillIcon src={reactIcon} alt="react logo" />
-            <SkillIcon src={astroIcon} alt="astro logo" />
-            <SkillIcon src={typescriptIcon} alt="typescript logo" />
+            <SkillIcon src={reactIcon} alt={t.skills.logos.react} />
+            <SkillIcon src={astroIcon} alt={t.skills.logos.astro} />
+            <SkillIcon src={typescriptIcon} alt={t.skills.logos.typescript} />
           </SkillIcons>
         </SkillCard>
         <SkillCard>
-          <SkillTitle>Database</SkillTitle>
-          <SkillSubtitle>
-            I have worked with <strong>SQL Server</strong> and{" "}
-            <strong>PostgreSQL</strong>, but my strongest experience is with{" "}
-            <strong>MySQL</strong>, particularly in designing, optimizing, and
-            managing relational databases in production environments. I focus on{" "}
-            <strong>data integrity</strong>, <strong>query performance</strong>,
-            and <strong>scalable schema design</strong> to support high-demand
-            applications.
-          </SkillSubtitle>
+          <SkillTitle>{t.skills.database.title}</SkillTitle>
+          <SkillSubtitle>{t.skills.database.subtitle}</SkillSubtitle>
           <SkillIcons>
-            <SkillIcon src={sqlServerIcon} alt="sql server logo" />
-            <SkillIcon src={postgresqlIcon} alt="postgresql logo" />
-            <SkillIcon src={mysqlIcon} alt="mysql logo" />
+            <SkillIcon src={sqlServerIcon} alt={t.skills.logos.sqlServer} />
+            <SkillIcon src={postgresqlIcon} alt={t.skills.logos.postgresql} />
+            <SkillIcon src={mysqlIcon} alt={t.skills.logos.mysql} />
           </SkillIcons>
         </SkillCard>
       </SkillsWrapper>

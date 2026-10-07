@@ -43,6 +43,73 @@
     <meta name="twitter:image" content="https://molxno.dev/preview.png"/>
 
     <title>Santiago Molano Holguín | Fullstack Developer: Laravel, Kotlin & Vue</title>
+    <script>
+        (function () {
+            var titles = {
+                en: "Santiago Molano Holguín | Fullstack Developer: Laravel, Kotlin & Vue",
+                es: "Santiago Molano Holguín | Desarrollador fullstack: Laravel, Kotlin y Vue"
+            };
+            var descriptions = {
+                en: "Fullstack developer with 4+ years in banking, fintech, and digital health. Backend specialist in Laravel; also Kotlin (Jetpack Compose) and Vue. Open to remote, hybrid, and on-site roles.",
+                es: "Desarrollador fullstack con más de 4 años en banca, fintech y salud digital. Especialista en backend con Laravel; también Kotlin (Jetpack Compose) y Vue. Abierto a roles remotos, híbridos y presenciales."
+            };
+            var sections = {
+                en: {about: "about-me", experience: "experience", projects: "projects", skills: "skills"},
+                es: {about: "sobre-mi", experience: "experiencia", projects: "proyectos", skills: "habilidades"}
+            };
+
+            function pick(code) {
+                if (!code) return null;
+                var base = String(code).toLowerCase().split("-")[0];
+                return base === "en" || base === "es" ? base : null;
+            }
+
+            function detect() {
+                var match = /(?:^|[?&])lang=(en|es)(?:&|#|$)/i.exec(window.location.search);
+                if (match) return match[1].toLowerCase();
+                var list = (navigator.languages && navigator.languages.length)
+                    ? navigator.languages
+                    : [navigator.language];
+                for (var i = 0; i < list.length; i++) {
+                    var found = pick(list[i]);
+                    if (found) return found;
+                }
+                return "en";
+            }
+
+            function mapHash(hash, target) {
+                if (!hash) return "";
+                var id = hash.replace(/^#/, "");
+                var key = null;
+                ["en", "es"].some(function (locale) {
+                    for (var name in sections[locale]) {
+                        if (sections[locale][name] === id) {
+                            key = name;
+                            return true;
+                        }
+                    }
+                    return false;
+                });
+                return key ? "#" + sections[target][key] : "";
+            }
+
+            var path = window.location.pathname.replace(/\/+$/, "") || "/";
+            var lang = pick(path.replace(/^\//, ""));
+
+            if (!lang) {
+                lang = detect();
+                window.location.replace("/" + lang + mapHash(window.location.hash, lang));
+                return;
+            }
+
+            document.documentElement.lang = lang;
+            document.title = titles[lang];
+            var meta = document.querySelector('meta[name="description"]');
+            if (meta) meta.setAttribute("content", descriptions[lang]);
+            var canonical = document.querySelector('link[rel="canonical"]');
+            if (canonical) canonical.setAttribute("href", "https://molxno.dev/" + lang + "/");
+        })();
+    </script>
 </head>
 <body>
 <noscript>

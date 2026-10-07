@@ -12,9 +12,12 @@ import Origen from "../../images/origen.png";
 import Gastos from "../../images/gastos.png";
 import Veterinaria from "../../images/veterinaria.png";
 import Crm from "../../images/crm-react.png";
+import {Dictionary, useI18n} from "../../i18n";
+
+type ProjectId = keyof Dictionary["projects"]["items"];
 
 interface Project {
-  name: string;
+  id: ProjectId;
   background: string;
   link: string;
 }
@@ -40,43 +43,45 @@ const responsive = {
 
 const projects: Project[] = [
   {
-    name: "CRM",
+    id: "crm",
     background: Crm,
     link: "https://crm.molxno.dev/",
   },
   {
-    name: "Landing Page",
+    id: "origen",
     background: Origen,
     link: "https://origen.molxno.dev/",
   },
   {
-    name: "Cryptocurrency",
+    id: "crypto",
     background: Cripto,
     link: "https://crypto.molxno.dev/",
   },
   {
-    name: "Veterinary",
+    id: "veterinary",
     background: Veterinaria,
     link: "https://veterinary.molxno.dev/",
   },
   {
-    name: "Landing Page",
+    id: "boo",
     background: Boo,
     link: "https://boo.molxno.dev/",
   },
   {
-    name: "Controls costs",
+    id: "costs",
     background: Gastos,
     link: "https://costs.molxno.dev/",
   },
 ];
 
 const ProjectsSection: React.FC = () => {
+  const {t} = useI18n();
+
   return (
     <>
-      <ProjectsContainer id="projects">
+      <ProjectsContainer id={t.sections.projects}>
         <ProjectsWrapper>
-          <Heading>Projects</Heading>
+          <Heading>{t.projects.heading}</Heading>
           <Carousel
             responsive={responsive}
             autoPlay={true}
@@ -91,17 +96,19 @@ const ProjectsSection: React.FC = () => {
             dotListClass="custom-dot-list-style"
             autoPlaySpeed={2000}
           >
-            {projects.map((project, index) => {
+            {projects.map((project) => {
+              const copy = t.projects.items[project.id];
+
               return (
-                <article key={index}>
+                <article key={project.id}>
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={project.background} alt={project.name + " project"} />
+                    <img src={project.background} alt={copy.alt} />
                   </a>
-                  <h5>{project.name}</h5>
+                  <h5>{copy.name}</h5>
                 </article>
               );
             })}

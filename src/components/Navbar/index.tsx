@@ -5,12 +5,15 @@ import {
   NavbarContainer,
   NavLogo,
   MobileIcon,
+  MobileLanguage,
   NavMenu,
   NavItem,
   NavLinks,
 } from './NavBarElements';
 import {IconContext} from 'react-icons/lib';
 import {animateScroll as scroll} from 'react-scroll';
+import {useI18n} from '../../i18n';
+import LanguageToggle from '../LanguageToggle';
 
 type ToggleFunction = () => void;
 
@@ -20,6 +23,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({toggle}) => {
   const [scrollNav, setScrollNav] = useState<boolean>(false);
+  const {language, t} = useI18n();
 
   const changeNav = () => {
     if (window.scrollY >= 150) {
@@ -43,60 +47,70 @@ const Navbar: React.FC<NavbarProps> = ({toggle}) => {
       <IconContext.Provider value={{color: '#b71b25'}}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
-            <NavLogo to="/" onClick={toggleHome}>
-              home
+            <NavLogo to={`/${language}`} onClick={toggleHome}>
+              {t.nav.home}
             </NavLogo>
-            <MobileIcon onClick={toggle}>
+            <MobileLanguage>
+              <LanguageToggle/>
+            </MobileLanguage>
+            <MobileIcon type="button" onClick={toggle} aria-label={t.nav.openMenu}>
               <FaBars/>
             </MobileIcon>
             <NavMenu>
               <NavItem>
                 <NavLinks
-                  to="aboutme"
+                  to={t.sections.about}
                   smooth={true}
                   duration={900}
                   spy={true}
+                  hashSpy={true}
                   offset={-60}
-                  href="#"
+                  href={`#${t.sections.about}`}
                 >
-                  Who is Molxno?
+                  {t.nav.about}
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="experience"
+                  to={t.sections.experience}
                   smooth={true}
                   duration={700}
                   spy={true}
+                  hashSpy={true}
                   offset={-60}
-                  href="#"
+                  href={`#${t.sections.experience}`}
                 >
-                  Experience
+                  {t.nav.experience}
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="projects"
+                  to={t.sections.projects}
                   smooth={true}
                   duration={600}
                   spy={true}
+                  hashSpy={true}
                   offset={-60}
-                  href="#"
+                  href={`#${t.sections.projects}`}
                 >
-                  Projects
+                  {t.nav.projects}
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="skills"
+                  to={t.sections.skills}
                   smooth={true}
                   duration={500}
                   spy={true}
+                  hashSpy={true}
                   offset={-60}
-                  href="#"
+                  href={`#${t.sections.skills}`}
                 >
-                  Skills
+                  {t.nav.skills}
                 </NavLinks>
+              </NavItem>
+              <NavItem>
+                <LanguageToggle/>
               </NavItem>
             </NavMenu>
           </NavbarContainer>
