@@ -1,5 +1,6 @@
 export {cvFiles} from "./cv";
 export {applyDocumentLanguage} from "./applyDocumentLanguage";
+export {buildJsonLd, JSON_LD_SCRIPT_ID} from "./jsonLd";
 export {
   detectLanguage,
   detectLanguageFromEnvironment,

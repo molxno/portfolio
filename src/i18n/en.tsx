@@ -4,7 +4,8 @@ export const en = {
   meta: {
     title: "Santiago Molano Holguín | Fullstack Developer: Laravel, Kotlin & Vue",
     description:
-      "Fullstack developer with 4+ years in banking, fintech, and digital health. Backend specialist in Laravel; also Kotlin (Jetpack Compose) and Vue. Open to remote, hybrid, and on-site roles.",
+      "Fullstack developer with 4+ years in banking, fintech, and digital health. Backend specialist in Laravel; also Kotlin and Vue. Open to remote, hybrid, and on-site roles.",
+    jobTitle: "Fullstack Developer",
   },
   nav: {
     home: "home",
@@ -34,8 +35,7 @@ export const en = {
   },
   about: {
     topLine: "About Me",
-    headline:
-      "Tech Lead & Software Architect | PHP (Laravel), Clean Architecture, Fintech",
+    headline: "Fullstack developer | Laravel, Kotlin & Vue",
     description:
       "I’m Santiago Molano, a backend developer with 4+ years of experience leading Laravel projects in fintech and banking. I specialize in clean architecture, scalable APIs, and secure deployments. I’ve led technical initiatives, mentored developers, and taken ownership of critical backend systems. Certified in cybersecurity and currently enhancing my English (B1 → B2), I’m focused on stepping into a Tech Lead or Software Architect role — where strategy meets code and impact is measurable.",
     buttonLabel: "Download CV",

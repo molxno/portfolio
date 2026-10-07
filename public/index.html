@@ -7,7 +7,7 @@
     <meta name="author" content="Santiago Molano Holguín"/>
     <meta
             name="description"
-            content="Fullstack developer with 4+ years in banking, fintech, and digital health. Backend specialist in Laravel; also Kotlin (Jetpack Compose) and Vue. Open to remote, hybrid, and on-site roles."
+            content="Fullstack developer with 4+ years in banking, fintech, and digital health. Backend specialist in Laravel; also Kotlin and Vue. Open to remote, hybrid, and on-site roles."
     />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
@@ -25,7 +25,7 @@
     <meta property="og:title" content="Santiago Molano Holguín | Fullstack Developer: Laravel, Kotlin & Vue"/>
     <meta
             property="og:description"
-            content="Fullstack developer with 4+ years in banking, fintech, and digital health. Backend specialist in Laravel; also Kotlin (Jetpack Compose) and Vue. Open to remote, hybrid, and on-site roles."
+            content="Fullstack developer with 4+ years in banking, fintech, and digital health. Backend specialist in Laravel; also Kotlin and Vue. Open to remote, hybrid, and on-site roles."
     />
     <meta property="og:image" content="https://molxno.dev/preview.png"/>
     <meta property="og:url" content="https://molxno.dev/"/>
@@ -38,7 +38,7 @@
     <meta name="twitter:title" content="Santiago Molano Holguín | Fullstack Developer: Laravel, Kotlin & Vue"/>
     <meta
             name="twitter:description"
-            content="Fullstack developer with 4+ years in banking, fintech, and digital health. Backend specialist in Laravel; also Kotlin (Jetpack Compose) and Vue. Open to remote, hybrid, and on-site roles."
+            content="Fullstack developer with 4+ years in banking, fintech, and digital health. Backend specialist in Laravel; also Kotlin and Vue. Open to remote, hybrid, and on-site roles."
     />
     <meta name="twitter:image" content="https://molxno.dev/preview.png"/>
 
@@ -50,8 +50,8 @@
                 es: "Santiago Molano Holguín | Desarrollador fullstack: Laravel, Kotlin y Vue"
             };
             var descriptions = {
-                en: "Fullstack developer with 4+ years in banking, fintech, and digital health. Backend specialist in Laravel; also Kotlin (Jetpack Compose) and Vue. Open to remote, hybrid, and on-site roles.",
-                es: "Desarrollador fullstack con más de 4 años en banca, fintech y salud digital. Especialista en backend con Laravel; también Kotlin (Jetpack Compose) y Vue. Abierto a roles remotos, híbridos y presenciales."
+                en: "Fullstack developer with 4+ years in banking, fintech, and digital health. Backend specialist in Laravel; also Kotlin and Vue. Open to remote, hybrid, and on-site roles.",
+                es: "Desarrollador fullstack con más de 4 años en banca, fintech y salud digital. Especialista en backend con Laravel; también Kotlin y Vue. Abierto a roles remotos, híbridos y presenciales."
             };
             var sections = {
                 en: {about: "about-me", experience: "experience", projects: "projects", skills: "skills"},
@@ -106,9 +106,56 @@
             document.title = titles[lang];
             var meta = document.querySelector('meta[name="description"]');
             if (meta) meta.setAttribute("content", descriptions[lang]);
+            var ogTitle = document.querySelector('meta[property="og:title"]');
+            if (ogTitle) ogTitle.setAttribute("content", titles[lang]);
+            var ogDescription = document.querySelector('meta[property="og:description"]');
+            if (ogDescription) ogDescription.setAttribute("content", descriptions[lang]);
+            var ogUrl = document.querySelector('meta[property="og:url"]');
+            if (ogUrl) ogUrl.setAttribute("content", "https://molxno.dev/" + lang + "/");
+            var ogLocale = document.querySelector('meta[property="og:locale"]');
+            if (ogLocale) ogLocale.setAttribute("content", lang === "es" ? "es_CO" : "en_US");
+            var twitterTitle = document.querySelector('meta[name="twitter:title"]');
+            if (twitterTitle) twitterTitle.setAttribute("content", titles[lang]);
+            var twitterDescription = document.querySelector('meta[name="twitter:description"]');
+            if (twitterDescription) twitterDescription.setAttribute("content", descriptions[lang]);
             var canonical = document.querySelector('link[rel="canonical"]');
             if (canonical) canonical.setAttribute("href", "https://molxno.dev/" + lang + "/");
         })();
+    </script>
+    <script type="application/ld+json" id="structured-data">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://molxno.dev/#person",
+          "name": "Santiago Molano Holguín",
+          "url": "https://molxno.dev",
+          "image": "https://molxno.dev/preview.png",
+          "jobTitle": "Fullstack Developer",
+          "description": "Fullstack developer with 4+ years in banking, fintech, and digital health. Backend specialist in Laravel; also Kotlin and Vue. Open to remote, hybrid, and on-site roles.",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Alternova Inc",
+            "url": "https://www.linkedin.com/company/alternova-inc/"
+          },
+          "sameAs": [
+            "https://x.com/molxno",
+            "https://www.linkedin.com/in/molanosantiago/",
+            "https://github.com/molxno"
+          ],
+          "knowsAbout": ["Laravel", "Django", "FastAPI", "React", "Vue", "Kotlin", "Astro", "MySQL", "PostgreSQL", "SQL Server", "AWS", "Docker", "GitHub Actions"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://molxno.dev/#website",
+          "url": "https://molxno.dev",
+          "name": "molxno.dev",
+          "inLanguage": ["en", "es"],
+          "publisher": {"@id": "https://molxno.dev/#person"}
+        }
+      ]
+    }
     </script>
 </head>
 <body>
