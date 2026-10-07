@@ -1,5 +1,5 @@
 import React from "react";
-import {Button} from "../ButtonElements";
+import {DownloadButton} from "../ButtonElements";
 import {
     InfoContainer,
     InfoWrapper,
@@ -14,12 +14,9 @@ import {
     ImgWrap,
     Img,
 } from "./InfoElements";
-
-import CV from "../../data/SantiagoMolanoCV.pdf";
-import {useI18n} from "../../i18n";
+import {cvFiles, useI18n} from "../../i18n";
 
 interface InfoSectionProps {
-    Route?: string;
     lightBg?: boolean;
     imgStart?: boolean;
     lightText?: boolean;
@@ -30,7 +27,6 @@ interface InfoSectionProps {
 }
 
 const InfoSection: React.FC<InfoSectionProps> = ({
-                                                     Route,
                                                      lightBg = false,
                                                      imgStart = false,
                                                      lightText = false,
@@ -39,18 +35,11 @@ const InfoSection: React.FC<InfoSectionProps> = ({
                                                      primary = false,
                                                      dark = false,
                                                  }) => {
-    const {t} = useI18n();
-    const sectionId = t.sections.about;
-
-    const handleDownload = () => {
-        const link = document.createElement("a");
-        link.href = CV;
-        link.download = "SantiagoMolanoCV.pdf";
-        link.click();
-    };
+    const {language, t} = useI18n();
+    const cv = cvFiles[language];
 
     return (
-        <InfoContainer lightBg={lightBg} id={sectionId}>
+        <InfoContainer lightBg={lightBg} id={t.sections.about}>
             <InfoWrapper>
                 <InfoRow imgStart={imgStart}>
                     <Column1>
@@ -59,14 +48,16 @@ const InfoSection: React.FC<InfoSectionProps> = ({
                             <Heading lightText={lightText}>{t.about.headline}</Heading>
                             <Subtitle darkText={darkText}>{t.about.description}</Subtitle>
                             <BtnWrap>
-                                <Button
-                                    to={Route || ""}
+                                <DownloadButton
+                                    href={cv.href}
+                                    download={cv.download}
+                                    rel="noopener"
+                                    aria-label={t.about.cvAria}
                                     primary={primary}
                                     dark={dark}
-                                    onClick={handleDownload}
                                 >
                                     {t.about.buttonLabel}
-                                </Button>
+                                </DownloadButton>
                             </BtnWrap>
                         </TextWrapper>
                     </Column1>

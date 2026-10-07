@@ -39,7 +39,8 @@ export const es: Dictionary = {
       "Tech Lead y Software Architect | PHP (Laravel), Clean Architecture, Fintech",
     description:
       "Soy Santiago Molano, un desarrollador backend con más de 4 años de experiencia liderando proyectos Laravel en fintech y banca. Me especializo en arquitectura limpia, APIs escalables y despliegues seguros. He liderado iniciativas técnicas, mentoreado desarrolladores y asumido la responsabilidad de sistemas backend críticos. Certificado en ciberseguridad y actualmente mejorando mi inglés (B1 → B2), estoy enfocado en dar el paso a un rol de Tech Lead o Software Architect — donde la estrategia se encuentra con el código y el impacto es medible.",
-    buttonLabel: "Descargar Currículum Vitae",
+    buttonLabel: "Descargar CV",
+    cvAria: "Descargar CV (PDF, español)",
     photoAlt: "Mi foto",
   },
   timeline: {

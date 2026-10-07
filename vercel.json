@@ -1,8 +1,19 @@
 {
   "rewrites": [
     {
-      "source": "/((?!static/|favicon.ico|manifest.json|robots.txt|sitemap.xml|preview.png|SantiagoMolanoCV.pdf|logo.png).*)",
+      "source": "/((?!static/|favicon.ico|manifest.json|robots.txt|sitemap.xml|preview.png|logo.png|cv/).*)",
       "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/cv/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
     }
   ]
 }
