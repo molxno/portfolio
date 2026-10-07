@@ -9,28 +9,3 @@ h1,
 h2 {
   font-family: "Unica One", cursive;
 }
-
-article {
-  position: relative;
-  width: 250px;
-  transition: all 0.3s ease;
-}
-
-article img {
-  box-shadow: 0 60px 60px -60px rgba(223, 41, 53, 0.5);
-  border-radius: 20px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.react-multi-carousel-list {
-  height: 30em;
-}
-
-.react-multi-carousel-track {
-  align-items: center;
-}
-
-.react-multi-carousel-dot--active button {
-  background: #df2935 !important;
-}

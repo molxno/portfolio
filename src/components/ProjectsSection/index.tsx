@@ -1,121 +1,184 @@
-import React from "react";
+import React, {useEffect, useRef, useState} from "react";
+import {MARQUEE_SPEED_PX, Project, projects, resolveProjectHref} from "../../data/projects";
+import {useI18n} from "../../i18n";
 import {
-  ProjectsContainer,
+  Card,
+  CardBody,
+  CardSlot,
+  Description,
   Heading,
+  Links,
+  Media,
+  Origin,
+  PauseButton,
+  ProjectName,
+  ProjectsContainer,
   ProjectsWrapper,
+  Set,
+  TextLink,
+  Toolbar,
+  Track,
+  Viewport,
 } from "./ProjectsElements";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import Boo from "../../images/boo.png";
-import Cripto from "../../images/cripto.png";
-import Origen from "../../images/origen.png";
-import Gastos from "../../images/gastos.png";
-import Veterinaria from "../../images/veterinaria.png";
-import Crm from "../../images/crm-react.png";
-import {Dictionary, useI18n} from "../../i18n";
 
-type ProjectId = keyof Dictionary["projects"]["items"];
+const usePrefersReducedMotion = () => {
+  const [reduced, setReduced] = useState(() =>
+    typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+  );
 
-interface Project {
-  id: ProjectId;
-  background: string;
-  link: string;
-}
+  useEffect(() => {
+    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const onChange = () => setReduced(media.matches);
+    media.addEventListener("change", onChange);
+    return () => media.removeEventListener("change", onChange);
+  }, []);
 
-const responsive = {
-  superLargeDesktop: {
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
+  return reduced;
 };
 
-const projects: Project[] = [
-  {
-    id: "crm",
-    background: Crm,
-    link: "https://crm.molxno.dev/",
-  },
-  {
-    id: "origen",
-    background: Origen,
-    link: "https://origen.molxno.dev/",
-  },
-  {
-    id: "crypto",
-    background: Cripto,
-    link: "https://crypto.molxno.dev/",
-  },
-  {
-    id: "veterinary",
-    background: Veterinaria,
-    link: "https://veterinary.molxno.dev/",
-  },
-  {
-    id: "boo",
-    background: Boo,
-    link: "https://boo.molxno.dev/",
-  },
-  {
-    id: "costs",
-    background: Gastos,
-    link: "https://costs.molxno.dev/",
-  },
-];
+const ProjectCover: React.FC<{project: Project; inert?: boolean}> = ({project, inert}) => {
+  const {t} = useI18n();
+  const copy = t.projects.items[project.id];
+  const {image} = project;
+  const imageEl = (
+    <img
+      data-cover-shot
+      src={image.png}
+      alt={inert ? "" : copy.alt}
+      width={image.width}
+      height={image.height}
+      loading="lazy"
+    />
+  );
+
+  if (!image.webp) {
+    return imageEl;
+  }
+
+  return (
+    <picture>
+      <source type="image/webp" srcSet={image.webp} />
+      {imageEl}
+    </picture>
+  );
+};
+
+const ProjectCard: React.FC<{
+  project: Project;
+  inert?: boolean;
+}> = ({project, inert}) => {
+  const {t, language} = useI18n();
+  const copy = t.projects.items[project.id];
+  const tabIndex = inert ? -1 : undefined;
+  const href = resolveProjectHref(project, language);
+
+  return (
+    <CardSlot aria-hidden={inert || undefined}>
+      <Card data-project-card={project.id}>
+        <Media data-project-cover>
+          <ProjectCover project={project} inert={inert} />
+        </Media>
+        <CardBody>
+          <Origin>{t.projects.origin[project.origin]}</Origin>
+          <ProjectName>{copy.name}</ProjectName>
+          <Description>{copy.description}</Description>
+          <Links>
+            <TextLink
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              tabIndex={tabIndex}
+            >
+              {t.projects.visitSite}
+            </TextLink>
+            {project.repoHref ? (
+              <TextLink
+                href={project.repoHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                tabIndex={tabIndex}
+              >
+                {t.projects.viewRepo}
+              </TextLink>
+            ) : null}
+          </Links>
+        </CardBody>
+      </Card>
+    </CardSlot>
+  );
+};
 
 const ProjectsSection: React.FC = () => {
   const {t} = useI18n();
+  const reducedMotion = usePrefersReducedMotion();
+  const [playing, setPlaying] = useState(true);
+  const [duration, setDuration] = useState(40);
+  const setRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const element = setRef.current;
+    if (!element || reducedMotion) {
+      return;
+    }
+
+    const measure = () => {
+      const width = element.scrollWidth;
+      if (width > 0) {
+        setDuration(width / MARQUEE_SPEED_PX);
+      }
+    };
+
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(element);
+    window.addEventListener("resize", measure);
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", measure);
+    };
+  }, [reducedMotion]);
 
   return (
-    <>
-      <ProjectsContainer id={t.sections.projects}>
-        <ProjectsWrapper>
-          <Heading>{t.projects.heading}</Heading>
-          <Carousel
-            responsive={responsive}
-            autoPlay={true}
-            swipeable={true}
-            draggable={true}
-            showDots={true}
-            infinite={true}
-            partialVisible={false}
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            arrows={false}
-            renderButtonGroupOutside={true}
-            dotListClass="custom-dot-list-style"
-            autoPlaySpeed={2000}
+    <ProjectsContainer id={t.sections.projects}>
+      <ProjectsWrapper>
+        <Heading>{t.projects.heading}</Heading>
+        {reducedMotion ? null : (
+          <Toolbar>
+            <PauseButton
+              type="button"
+              $pressed={!playing}
+              aria-pressed={!playing}
+              data-marquee-state={playing ? "playing" : "paused"}
+              onClick={() => setPlaying((value) => !value)}
+            >
+              {playing ? t.projects.pause : t.projects.play}
+            </PauseButton>
+          </Toolbar>
+        )}
+        <Viewport role="region" aria-label={t.projects.region} $reduced={reducedMotion}>
+          <Track
+            data-marquee-track
+            data-marquee-playing={playing && !reducedMotion ? "true" : "false"}
+            $duration={duration}
+            $paused={!playing || reducedMotion}
+            $reduced={reducedMotion}
           >
-            {projects.map((project) => {
-              const copy = t.projects.items[project.id];
-
-              return (
-                <article key={project.id}>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={project.background} alt={copy.alt} />
-                  </a>
-                  <h5>{copy.name}</h5>
-                </article>
-              );
-            })}
-          </Carousel>
-        </ProjectsWrapper>
-      </ProjectsContainer>
-    </>
+            <Set ref={setRef}>
+              {projects.map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
+            </Set>
+            {reducedMotion ? null : (
+              <Set>
+                {projects.map((project) => (
+                  <ProjectCard key={`clone-${project.id}`} project={project} inert />
+                ))}
+              </Set>
+            )}
+          </Track>
+        </Viewport>
+      </ProjectsWrapper>
+    </ProjectsContainer>
   );
 };
 
