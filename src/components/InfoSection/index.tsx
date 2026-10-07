@@ -16,21 +16,15 @@ import {
 } from "./InfoElements";
 
 import CV from "../../data/SantiagoMolanoCV.pdf";
+import {useI18n} from "../../i18n";
 
-// Define the types for the props
 interface InfoSectionProps {
     Route?: string;
     lightBg?: boolean;
-    id?: string;
     imgStart?: boolean;
-    topLine?: string;
     lightText?: boolean;
-    headline?: string;
     darkText?: boolean;
-    description?: string;
-    buttonLabel?: string;
     img?: string;
-    alt?: string;
     primary?: boolean;
     dark?: boolean;
 }
@@ -38,19 +32,16 @@ interface InfoSectionProps {
 const InfoSection: React.FC<InfoSectionProps> = ({
                                                      Route,
                                                      lightBg = false,
-                                                     id,
                                                      imgStart = false,
-                                                     topLine,
                                                      lightText = false,
-                                                     headline,
                                                      darkText = false,
-                                                     description,
-                                                     buttonLabel,
                                                      img,
-                                                     alt,
                                                      primary = false,
                                                      dark = false,
                                                  }) => {
+    const {t} = useI18n();
+    const sectionId = t.sections.about;
+
     const handleDownload = () => {
         const link = document.createElement("a");
         link.href = CV;
@@ -59,14 +50,14 @@ const InfoSection: React.FC<InfoSectionProps> = ({
     };
 
     return (
-        <InfoContainer lightBg={lightBg} id={id}>
+        <InfoContainer lightBg={lightBg} id={sectionId}>
             <InfoWrapper>
                 <InfoRow imgStart={imgStart}>
                     <Column1>
                         <TextWrapper>
-                            <TopLine>{topLine}</TopLine>
-                            <Heading lightText={lightText}>{headline}</Heading>
-                            <Subtitle darkText={darkText}>{description}</Subtitle>
+                            <TopLine>{t.about.topLine}</TopLine>
+                            <Heading lightText={lightText}>{t.about.headline}</Heading>
+                            <Subtitle darkText={darkText}>{t.about.description}</Subtitle>
                             <BtnWrap>
                                 <Button
                                     to={Route || ""}
@@ -74,14 +65,14 @@ const InfoSection: React.FC<InfoSectionProps> = ({
                                     dark={dark}
                                     onClick={handleDownload}
                                 >
-                                    {buttonLabel}
+                                    {t.about.buttonLabel}
                                 </Button>
                             </BtnWrap>
                         </TextWrapper>
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                            <Img src={img} alt={alt}/>
+                            <Img src={img} alt={t.about.photoAlt}/>
                         </ImgWrap>
                     </Column2>
                 </InfoRow>

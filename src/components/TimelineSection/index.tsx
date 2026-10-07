@@ -23,15 +23,7 @@ import {
   Button,
   TimelineWrapper,
 } from "./TimelineElements";
-
-interface TimelineElement {
-  date: string;
-  icon: string;
-  title: string;
-  position: string;
-  description: string;
-  link: string;
-}
+import {useI18n} from "../../i18n";
 
 const iconTimeline = (type: string) => {
   switch (type) {
@@ -62,39 +54,45 @@ const iconTimeline = (type: string) => {
 };
 
 const TimelineSection: React.FC = () => {
+  const {t} = useI18n();
+
   return (
-    <TimelineContainer id="experience">
+    <TimelineContainer id={t.sections.experience}>
       <TimelineWrapper>
-        <Heading>Timeline</Heading>
+        <Heading>{t.timeline.heading}</Heading>
         <VerticalTimeline lineColor="#010606">
-          {TimelineData.map((element: TimelineElement, index: number) => (
-            <VerticalTimelineElement
-              key={index}
-              date={element.date}
-              dateClassName="date"
-              iconStyle={{ background: iconTimeline(element.icon).background }}
-              icon={iconTimeline(element.icon).icon}
-            >
-              <Company className="vertical-timeline-element-title">
-                {element.title}
-              </Company>
-              <Position className="vertical-timeline-element-subtitle">
-                {element.position}
-              </Position>
-              <Description>{element.description}</Description>
-              <BtnWrap>
-                <Button
-                  href={element.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  primary={false}
-                  dark={true}
-                >
-                  LinkedIn
-                </Button>
-              </BtnWrap>
-            </VerticalTimelineElement>
-          ))}
+          {TimelineData.map((element) => {
+            const copy = t.timeline.items[element.id];
+
+            return (
+              <VerticalTimelineElement
+                key={element.id}
+                date={copy.date}
+                dateClassName="date"
+                iconStyle={{ background: iconTimeline(element.icon).background }}
+                icon={iconTimeline(element.icon).icon}
+              >
+                <Company className="vertical-timeline-element-title">
+                  {copy.title}
+                </Company>
+                <Position className="vertical-timeline-element-subtitle">
+                  {copy.position}
+                </Position>
+                <Description>{copy.description}</Description>
+                <BtnWrap>
+                  <Button
+                    href={element.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    primary={false}
+                    dark={true}
+                  >
+                    {t.timeline.linkedIn}
+                  </Button>
+                </BtnWrap>
+              </VerticalTimelineElement>
+            );
+          })}
         </VerticalTimeline>
       </TimelineWrapper>
     </TimelineContainer>

@@ -13,8 +13,11 @@ import {
   SocialIconLink,
   SocialIcons,
 } from "./FooterElements";
+import {useI18n} from "../../i18n";
 
 const Footer: FC = () => {
+  const {t} = useI18n();
+
   return (
     <FooterContainer>
       <FooterWrap>
@@ -25,21 +28,24 @@ const Footer: FC = () => {
                 <SocialIconLink
                   href="https://x.com/molxno"
                   target="_blank"
-                  aria-label="X"
+                  rel="noopener noreferrer"
+                  aria-label={t.footer.x}
                 >
                   <FaXTwitter/>
                 </SocialIconLink>
                 <SocialIconLink
                   href="https://www.linkedin.com/in/molanosantiago/"
                   target="_blank"
-                  aria-label="LinkedIn"
+                  rel="noopener noreferrer"
+                  aria-label={t.footer.linkedIn}
                 >
                   <FaLinkedin/>
                 </SocialIconLink>
                 <SocialIconLink
                   href="https://github.com/molxno"
                   target="_blank"
-                  aria-label="GitHub"
+                  rel="noopener noreferrer"
+                  aria-label={t.footer.gitHub}
                 >
                   <FaGithub/>
                 </SocialIconLink>
@@ -50,9 +56,9 @@ const Footer: FC = () => {
         <FooterText>
           <FooterTextWrap>
             <WebsiteRights>
-              © molxno, Property of a Backend Wizard.
+              {t.footer.rights}
               <br/>
-              Made with ❤️
+              {t.footer.madeWith}
             </WebsiteRights>
           </FooterTextWrap>
         </FooterText>

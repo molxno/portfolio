@@ -45,8 +45,11 @@ export const NavLogo = styled(LinkR)`
     background: transparent;
 `;
 
-export const MobileIcon = styled.div`
+export const MobileIcon = styled.button`
     display: none;
+    background: transparent;
+    border: 0;
+    padding: 0;
 
     @media screen and (max-width: 820px) {
         display: block;
@@ -57,6 +60,21 @@ export const MobileIcon = styled.div`
         font-size: 1.8rem;
         cursor: pointer;
         color: #df2935;
+    }
+
+    &:focus-visible {
+        outline: 2px solid #df2935;
+        outline-offset: 4px;
+    }
+`;
+
+export const MobileLanguage = styled.div`
+    display: none;
+
+    @media screen and (max-width: 820px) {
+        display: flex;
+        align-items: center;
+        margin-right: 3.25rem;
     }
 `;
 
@@ -75,6 +93,8 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
     height: 50px;
     font-weight: bolder;
+    display: flex;
+    align-items: center;
 `;
 
 export const NavLinks = styled(LinkS)`
