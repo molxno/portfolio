@@ -19,3 +19,9 @@ Source: [Devicon](https://github.com/devicons/devicon) (MIT License), except Ast
 | `aws.svg` | Devicon amazonwebservices-original-wordmark; wordmark fill `#FFFFFF`, smile `#f90` kept | MIT |
 | `docker.svg` | Devicon docker-original; whale body `#B8C9CE` for contrast | MIT |
 | `githubactions.svg` | Devicon githubactions-original | MIT |
+| `python.svg` | Devicon python-original | MIT |
+| `azure.svg` | Devicon azure-original; darkest stop `#114A8B` → `#265FA0` for WCAG 1.4.11 on `#010606` | MIT |
+| `digitalocean.svg` | Devicon digitalocean-original | MIT |
+| `jira.svg` | Devicon jira-original; `#0052cc` → `#0355cf` for contrast | MIT |
+| `vue-on-light.svg` | Same Devicon vuejs-original as `vue.svg`; chevron `#35495e` for chips on `#f3f4f6` | MIT |
+| `aws-on-light.svg` | Same Devicon AWS wordmark as `aws.svg`; lettering `#252f3e` for chips on `#f3f4f6` | MIT |

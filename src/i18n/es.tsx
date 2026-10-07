@@ -44,36 +44,48 @@ export const es: Dictionary = {
     photoAlt: "Mi foto",
   },
   timeline: {
-    heading: "Línea de tiempo",
+    heading: "Dónde he trabajado",
+    region: "Línea de tiempo profesional",
     linkedIn: "LinkedIn",
+    current: "Actual",
     items: {
       btg: {
         title: "BTG Pactual Colombia",
-        position: "Desarrollador fullstack | Analista QA",
-        description:
-          "Resolví incidentes críticos en producción a nivel SQL, asegurando la disponibilidad en operaciones bancarias. Canalicé bugs funcionales con el proveedor externo, generando reportes en Jira y facilitando una solución rápida. Automaticé la limpieza de procedimientos almacenados duplicados, mejorando la mantenibilidad del sistema.",
-        date: "Julio 2022 - Enero 2023",
+        period: "Jul 2022 – Ene 2023",
+        roles: [
+          {
+            position: "Analista de Operaciones / Desarrollador Fullstack · Prácticas",
+            date: "Jul 2022 – Ene 2023",
+          },
+        ],
+        achievements: [
+          "Resolví incidentes críticos a nivel SQL en operaciones bancarias.",
+          "Canalicé bugs con el proveedor mediante reportes en Jira para acelerar su solución.",
+          "Automaticé la limpieza de procedimientos almacenados duplicados.",
+        ],
       },
       sportta: {
-        title: "Sportta Group",
-        position: "Desarrollador fullstack",
-        description:
-          "Desarrollé y mantuve la app móvil y web (React/React Native + Laravel) para atletas. Automatización del ciclo de despliegue (CI/CD), reduciendo errores y el tiempo de entrega en producción. Restructuré la base de datos relacional para optimizar el rendimiento y la escalabilidad.",
-        date: "Enero 2023 - Mayo 2023",
+        title: "Sportta S.A.S",
+        period: "Ene 2023 – May 2023",
+        roles: [{position: "Desarrollador Fullstack", date: "Ene 2023 – May 2023"}],
+        achievements: [
+          "Desarrollé la app móvil y web para atletas (React Native, React, Laravel).",
+          "Automaticé el CI/CD, reduciendo errores y tiempos de entrega.",
+          "Reestructuré la base de datos relacional para mejorar rendimiento y escalabilidad.",
+        ],
       },
-      alternovaPhp: {
+      alternova: {
         title: "Alternova Inc",
-        position: "Desarrollador backend PHP",
-        description:
-          "Lideré el desarrollo backend del sistema de corresponsales bancarios de BAM Guatemala, gestionando todo el ciclo de vida del proyecto (despliegues, bugs críticos, nuevas funcionalidades). Implementé arquitectura limpia y control de vulnerabilidades OWASP, asegurando alta disponibilidad y seguridad en entornos bancarios productivos. Guié técnicamente a un desarrollador junior, coordinando tareas y revisiones de código como líder informal del proyecto.",
-        date: "Mayo 2023 - Actualidad",
-      },
-      alternovaPython: {
-        title: "Alternova Inc",
-        position: "Desarrollador backend Python",
-        description:
-          "Desarrollé el backend de un proyecto de salud diseñado para ayudar a personas que han sido víctimas de violencia a través de una aplicación móvil y un sitio web. Implementé patrones de diseño para asegurar código limpio y puse un enfoque particular en la mantenibilidad del sistema usando Django.",
-        date: "Mar 2025 - Actualidad",
+        period: "May 2023 – Actualidad",
+        roles: [
+          {position: "Desarrollador Fullstack", date: "Oct 2026 – Actualidad"},
+          {position: "Desarrollador Backend", date: "May 2023 – Oct 2026"},
+        ],
+        achievements: [
+          "Responsable único de la plataforma de corresponsales bancarios BAM Guatemala: backend, Android y web.",
+          "Desarrollé Nequi Guatemala como modelo de negocio independiente en arquitectura hexagonal y AWS.",
+          "Backend de Sky, plataforma de salud digital para TDAH (Laravel y Django).",
+        ],
       },
     },
   },

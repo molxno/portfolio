@@ -10,16 +10,6 @@ h2 {
   font-family: "Unica One", cursive;
 }
 
-.date {
-  font-weight: bold !important;
-}
-
-.vertical-timeline-element-content {
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
-    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
-  padding: 2em 3em !important;
-}
-
 article {
   position: relative;
   width: 250px;
@@ -43,12 +33,4 @@ article img {
 
 .react-multi-carousel-dot--active button {
   background: #df2935 !important;
-}
-
-@media only screen and (max-width: 1700px) {
-  .vertical-timeline-element-date {
-    display: block !important;
-    float: none !important;
-    color: rgb(44, 44, 44);
-  }
 }
