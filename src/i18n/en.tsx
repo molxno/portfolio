@@ -77,8 +77,7 @@ export const en = {
         title: "Alternova Inc",
         period: "May 2023 – Present",
         roles: [
-          {position: "Fullstack Developer", date: "Oct 2026 – Present"},
-          {position: "Backend Developer", date: "May 2023 – Oct 2026"},
+          {position: "Backend Developer", date: "May 2023 – Present"},
         ],
         achievements: [
           "Sole owner of BAM Guatemala's banking correspondent platform: backend, Android, and web.",

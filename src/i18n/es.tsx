@@ -78,8 +78,7 @@ export const es: Dictionary = {
         title: "Alternova Inc",
         period: "May 2023 – Actualidad",
         roles: [
-          {position: "Desarrollador Fullstack", date: "Oct 2026 – Actualidad"},
-          {position: "Desarrollador Backend", date: "May 2023 – Oct 2026"},
+          {position: "Desarrollador Backend", date: "May 2023 – Actualidad"},
         ],
         achievements: [
           "Responsable único de la plataforma de corresponsales bancarios BAM Guatemala: backend, Android y web.",
