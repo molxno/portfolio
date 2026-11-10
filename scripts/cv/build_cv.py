@@ -112,7 +112,7 @@ def build(c, out):
 
 
 ES = dict(
-    summary=("Desarrollador fullstack con más de 4 años de experiencia construyendo software escalable para banca, "
+    summary=("Desarrollador fullstack senior con más de 5 años de experiencia construyendo software escalable para banca, "
              "tecnología financiera y salud digital. Especialista backend en Laravel (PHP), con experiencia en Kotlin "
              "(Android Jetpack Compose) y Vue (TypeScript). Fuerte en arquitectura limpia y hexagonal, AWS y SQL. "
              "Capacidad comprobada para asumir proyectos de principio a fin y liderar técnicamente. Busco asumir "
@@ -178,7 +178,7 @@ ES = dict(
 )
 
 EN = dict(
-    summary=("Fullstack developer with 4+ years of experience building scalable solutions for banking, fintech, and digital "
+    summary=("Senior fullstack developer with 5+ years of experience building scalable solutions for banking, fintech, and digital "
              "health. Backend specialist in Laravel (PHP), also working with Kotlin (Android Jetpack Compose) and Vue "
              "(TypeScript). Strong in clean and hexagonal architecture, AWS, and SQL. Proven ability to own projects "
              "end to end and lead technically. Seeking to step into a Tech Lead or Software Architect role where I can "

@@ -5,7 +5,7 @@ export const es: Dictionary = {
   meta: {
     title: "Santiago Molano Holguín | Desarrollador fullstack: Laravel, Kotlin y Vue",
     description:
-      "Desarrollador fullstack con más de 4 años en banca, fintech y salud digital. Especialista en backend con Laravel; también Kotlin y Vue. Abierto a roles remotos, híbridos y presenciales.",
+      "Desarrollador fullstack senior con más de 5 años en banca, fintech y salud digital. Especialista en backend con Laravel; también Kotlin y Vue. Abierto a roles remotos, híbridos y presenciales.",
     jobTitle: "Desarrollador fullstack",
   },
   nav: {
@@ -38,7 +38,7 @@ export const es: Dictionary = {
     topLine: "Sobre mí",
     headline: "Desarrollador fullstack | Laravel, Kotlin y Vue",
     description:
-      "Soy Santiago Molano, un desarrollador backend con más de 4 años de experiencia liderando proyectos Laravel en fintech y banca. Me especializo en arquitectura limpia, APIs escalables y despliegues seguros. He liderado iniciativas técnicas, mentoreado desarrolladores y asumido la responsabilidad de sistemas backend críticos. Certificado en ciberseguridad y actualmente mejorando mi inglés (B1 → B2), estoy enfocado en dar el paso a un rol de Tech Lead o Software Architect — donde la estrategia se encuentra con el código y el impacto es medible.",
+      "Soy Santiago Molano, un desarrollador backend senior con más de 5 años de experiencia liderando proyectos Laravel en fintech y banca. Me especializo en arquitectura limpia, APIs escalables y despliegues seguros. He liderado iniciativas técnicas, mentoreado desarrolladores y asumido la responsabilidad de sistemas backend críticos. Certificado en ciberseguridad y actualmente mejorando mi inglés (B1 → B2), estoy enfocado en dar el paso a un rol de Tech Lead o Software Architect — donde la estrategia se encuentra con el código y el impacto es medible.",
     buttonLabel: "Descargar CV",
     cvAria: "Descargar CV (PDF, español)",
     photoAlt: "Mi foto",
